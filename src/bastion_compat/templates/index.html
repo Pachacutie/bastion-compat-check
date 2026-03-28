@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BASTION Device Compatibility Checker</title>
+<meta name="description" content="Check compatibility between home security panels, sensors, locks, and more. 403 devices, 45 manufacturers. Free, instant, no signup required.">
+<meta property="og:title" content="BASTION Device Compatibility Checker">
+<meta property="og:description" content="Free tool — check if your home security devices are compatible before you buy. 403 devices across 45 manufacturers.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BASTION Device Compatibility Checker">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+h1 {
+    font-size: 1.75rem;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+.subtitle {
+    color: #666;
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+}
+.explainer {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+}
+.explainer h2 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+.explainer p {
+    font-size: 0.93rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+.explainer ul {
+    list-style: none;
+    padding: 0;
+}
+.explainer ul li {
+    font-size: 0.93rem;
+    color: #555;
+    padding: 3px 0;
+}
+.explainer ul li::before {
+    content: "\2022";
+    color: #2c3e50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+/* Device selection area */
+.device-select-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+@media (max-width: 540px) {
+    .device-select-area { grid-template-columns: 1fr; }
+}
+.device-field { position: relative; }
+.device-field label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 6px;
+}
+.device-field input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.device-field input:focus { border-color: #2c3e50; }
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 10;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.dropdown .dd-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.dropdown .dd-item:hover { background: #f0f4ff; }
+.selected-chip {
+    display: none;
+    margin-top: 8px;
+    background: #eef2f7;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    position: relative;
+}
+.selected-chip .chip-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+.selected-chip .chip-detail {
+    color: #666;
+    font-size: 0.82rem;
+}
+.selected-chip .chip-remove {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    color: #999;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+.selected-chip .chip-remove:hover { color: #dc3545; }
+
+/* Check button */
+.check-row { text-align: center; margin-bottom: 28px; }
+#checkBtn {
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+#checkBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+#checkBtn:hover:not(:disabled) { opacity: 0.85; }
+
+/* Result panel */
+#resultPanel {
+    display: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+}
+.verdict-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+.verdict-badge.compatible { background: #28a745; }
+.verdict-badge.incompatible { background: #dc3545; }
+.verdict-badge.partial { background: #ffc107; color: #333; }
+.verdict-badge.unknown { background: #6c757d; }
+.result-devices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+@media (max-width: 540px) {
+    .result-devices { grid-template-columns: 1fr; }
+}
+.result-device {
+    background: #f8f9fa;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 0.88rem;
+}
+.result-device .rd-name { font-weight: 600; color: #2c3e50; }
+.result-device .rd-type { color: #888; font-size: 0.82rem; }
+.result-explanation {
+    font-size: 0.93rem;
+    color: #444;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+.result-list h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+.result-list ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.result-list li {
+    font-size: 0.88rem;
+    color: #555;
+    padding: 2px 0;
+}
+
+/* Error */
+.error-box {
+    background: #fff3f3;
+    border: 1px solid #dc3545;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 0.93rem;
+    color: #dc3545;
+    display: none;
+}
+
+/* Device table browser */
+.browser-section { margin-bottom: 28px; }
+.browser-section h2 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+.filter-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+.filter-btn {
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.filter-btn.active {
+    background: #2c3e50;
+    color: #fff;
+    border-color: #2c3e50;
+}
+.filter-btn:hover:not(.active) { border-color: #2c3e50; }
+.device-table-wrap {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.device-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+.device-table th {
+    text-align: left;
+    padding: 10px 12px;
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.device-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+}
+.device-table tr.clickable { cursor: pointer; }
+.device-table tr.clickable:hover td { background: #f7f9fc; }
+
+/* Single-device compat list */
+#singleDevicePanel {
+    display: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+}
+#singleDevicePanel h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+.compat-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+}
+.compat-list-item:last-child { border-bottom: none; }
+.mini-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+.mini-badge.compatible { background: #28a745; }
+.mini-badge.partial { background: #ffc107; color: #333; }
+.mini-badge.incompatible { background: #dc3545; }
+.mini-badge.unknown { background: #6c757d; }
+#singleBackBtn {
+    margin-top: 12px;
+    padding: 6px 16px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+#singleBackBtn:hover { border-color: #2c3e50; }
+
+/* Footer */
+.footer-note {
+    background: #f0f4ff;
+    border: 1px solid #cce0ff;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.5;
+}
+.footer-note a { color: #2c3e50; }
+
+/* Loading spinner */
+.spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>BASTION Device Compatibility Checker</h1>
+    <p class="subtitle">Check if your home security devices work together.</p>
+
+    <div class="explainer">
+        <h2>What is this?</h2>
+        <p>A free tool that checks whether your home security devices are compatible before you buy.</p>
+        <ul>
+            <li>Select two devices (sensor + panel, lock + hub, etc.)</li>
+            <li>Get an instant verdict: compatible, incompatible, or partial</li>
+            <li>No account, no signup, no cost &mdash; just answers</li>
+        </ul>
+    </div>
+
+    <div class="device-select-area">
+        <div class="device-field" id="fieldA">
+            <label for="inputA">Device A</label>
+            <input type="text" id="inputA" placeholder="Search devices..." autocomplete="off">
+            <div class="dropdown" id="dropA"></div>
+            <div class="selected-chip" id="chipA">
+                <span class="chip-name" id="chipAName"></span>
+                <span class="chip-detail" id="chipADetail"></span>
+                <span class="chip-remove" id="chipARemove" title="Remove">&times;</span>
+            </div>
+        </div>
+        <div class="device-field" id="fieldB">
+            <label for="inputB">Device B</label>
+            <input type="text" id="inputB" placeholder="Search devices..." autocomplete="off">
+            <div class="dropdown" id="dropB"></div>
+            <div class="selected-chip" id="chipB">
+                <span class="chip-name" id="chipBName"></span>
+                <span class="chip-detail" id="chipBDetail"></span>
+                <span class="chip-remove" id="chipBRemove" title="Remove">&times;</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="check-row">
+        <button id="checkBtn" disabled>Check Compatibility</button>
+    </div>
+
+    <div class="error-box" id="errorBox"></div>
+    <div id="resultPanel"></div>
+    <div id="singleDevicePanel"></div>
+
+    <div class="browser-section">
+        <h2>Device Database</h2>
+        <div class="filter-row" id="filterRow">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="panel">Panels</button>
+            <button class="filter-btn" data-filter="sensor">Sensors</button>
+            <button class="filter-btn" data-filter="peripheral">Peripherals</button>
+        </div>
+        <div class="device-table-wrap">
+            <table class="device-table">
+                <thead>
+                    <tr>
+                        <th>Manufacturer</th>
+                        <th>Model</th>
+                        <th>Type</th>
+                        <th>Frequency / Protocol</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="deviceTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    {% if hosted %}
+    <div class="footer-note">
+        No data is stored. No accounts. No tracking. For questions:
+        <a href="https://github.com/Pachacutie/bastion-compat" target="_blank" rel="noopener">github.com/Pachacutie/bastion-compat</a>
+    </div>
+    {% else %}
+    <div class="footer-note">
+        Running locally &mdash; nothing leaves your computer.
+    </div>
+    {% endif %}
+</div>
+
+<script>
+(function() {
+    "use strict";
+
+    /* Safe DOM helper: remove all children without innerHTML */
+    function clearEl(el) {
+        while (el.firstChild) el.removeChild(el.firstChild);
+    }
+
+    var devices = [];
+    var selectedA = null;
+    var selectedB = null;
+
+    var inputA = document.getElementById("inputA");
+    var inputB = document.getElementById("inputB");
+    var dropA = document.getElementById("dropA");
+    var dropB = document.getElementById("dropB");
+    var chipA = document.getElementById("chipA");
+    var chipB = document.getElementById("chipB");
+    var checkBtn = document.getElementById("checkBtn");
+    var errorBox = document.getElementById("errorBox");
+    var resultPanel = document.getElementById("resultPanel");
+    var singleDevicePanel = document.getElementById("singleDevicePanel");
+    var deviceTableBody = document.getElementById("deviceTableBody");
+    var filterRow = document.getElementById("filterRow");
+
+    /* Load devices on page init */
+    fetch("/api/devices")
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            devices = data;
+            window._devices = data;
+            renderDeviceTable(data);
+        });
+
+    /* --- Helpers --- */
+    function getFreqProto(d) {
+        var parts = [];
+        if (d.frequency) parts.push(d.frequency);
+        if (d.frequencies && d.frequencies.length) parts.push(d.frequencies.join(", "));
+        if (d.protocol) parts.push(d.protocol);
+        if (d.protocols && d.protocols.length) parts.push(d.protocols.join(", "));
+        return parts.join(" / ");
+    }
+
+    /* --- Search dropdown --- */
+    function showDropdown(matches, dropEl, onSelect) {
+        clearEl(dropEl);
+        if (matches.length === 0) {
+            dropEl.style.display = "none";
+            return;
+        }
+        for (var i = 0; i < matches.length; i++) {
+            var item = document.createElement("div");
+            item.className = "dd-item";
+            var nameSpan = document.createElement("span");
+            nameSpan.textContent = matches[i].display_name;
+            var typeSpan = document.createElement("span");
+            typeSpan.textContent = " (" + matches[i].device_type + ")";
+            typeSpan.style.color = "#999";
+            typeSpan.style.fontSize = "0.82rem";
+            item.appendChild(nameSpan);
+            item.appendChild(typeSpan);
+            (function(dev) {
+                item.addEventListener("click", function() {
+                    onSelect(dev);
+                    dropEl.style.display = "none";
+                });
+            })(matches[i]);
+            dropEl.appendChild(item);
+        }
+        dropEl.style.display = "block";
+    }
+
+    function filterDevices(query) {
+        var q = query.toLowerCase();
+        return devices.filter(function(d) {
+            return d.display_name.toLowerCase().indexOf(q) !== -1 ||
+                   d.manufacturer.toLowerCase().indexOf(q) !== -1 ||
+                   d.model.toLowerCase().indexOf(q) !== -1;
+        });
+    }
+
+    function selectDevice(dev, side) {
+        if (side === "A") {
+            selectedA = dev;
+            inputA.value = "";
+            inputA.style.display = "none";
+            chipA.style.display = "block";
+            document.getElementById("chipAName").textContent = dev.display_name;
+            document.getElementById("chipADetail").textContent =
+                dev.device_type + (getFreqProto(dev) ? " \u2014 " + getFreqProto(dev) : "");
+        } else {
+            selectedB = dev;
+            inputB.value = "";
+            inputB.style.display = "none";
+            chipB.style.display = "block";
+            document.getElementById("chipBName").textContent = dev.display_name;
+            document.getElementById("chipBDetail").textContent =
+                dev.device_type + (getFreqProto(dev) ? " \u2014 " + getFreqProto(dev) : "");
+        }
+        updateCheckBtn();
+    }
+
+    function clearDevice(side) {
+        if (side === "A") {
+            selectedA = null;
+            inputA.style.display = "";
+            chipA.style.display = "none";
+            inputA.value = "";
+        } else {
+            selectedB = null;
+            inputB.style.display = "";
+            chipB.style.display = "none";
+            inputB.value = "";
+        }
+        updateCheckBtn();
+    }
+
+    function updateCheckBtn() {
+        checkBtn.disabled = !(selectedA && selectedB);
+    }
+
+    inputA.addEventListener("input", function() {
+        var q = this.value.trim();
+        if (q.length < 1) { dropA.style.display = "none"; return; }
+        var matches = filterDevices(q).slice(0, 10);
+        showDropdown(matches, dropA, function(dev) { selectDevice(dev, "A"); });
+    });
+
+    inputB.addEventListener("input", function() {
+        var q = this.value.trim();
+        if (q.length < 1) { dropB.style.display = "none"; return; }
+        var matches = filterDevices(q).slice(0, 10);
+        showDropdown(matches, dropB, function(dev) { selectDevice(dev, "B"); });
+    });
+
+    document.getElementById("chipARemove").addEventListener("click", function() { clearDevice("A"); });
+    document.getElementById("chipBRemove").addEventListener("click", function() { clearDevice("B"); });
+
+    /* Close dropdowns on outside click */
+    document.addEventListener("click", function(e) {
+        if (!document.getElementById("fieldA").contains(e.target)) dropA.style.display = "none";
+        if (!document.getElementById("fieldB").contains(e.target)) dropB.style.display = "none";
+    });
+
+    /* --- Compatibility check --- */
+    checkBtn.addEventListener("click", function() {
+        if (!selectedA || !selectedB) return;
+        errorBox.style.display = "none";
+        resultPanel.style.display = "none";
+        checkBtn.disabled = true;
+        clearEl(checkBtn);
+        var spinner = document.createElement("span");
+        spinner.className = "spinner";
+        checkBtn.appendChild(spinner);
+        checkBtn.appendChild(document.createTextNode("Checking..."));
+
+        fetch("/api/check", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({device_a: selectedA.id, device_b: selectedB.id})
+        })
+        .then(function(r) { return r.json().then(function(d) { return {ok: r.ok, data: d}; }); })
+        .then(function(res) {
+            checkBtn.textContent = "Check Compatibility";
+            updateCheckBtn();
+            if (!res.ok) {
+                errorBox.textContent = res.data.error || "Something went wrong.";
+                errorBox.style.display = "block";
+                return;
+            }
+            renderResult(res.data);
+        })
+        .catch(function() {
+            checkBtn.textContent = "Check Compatibility";
+            updateCheckBtn();
+            errorBox.textContent = "Network error. Please try again.";
+            errorBox.style.display = "block";
+        });
+    });
+
+    function verdictIcon(v) {
+        switch (v) {
+            case "COMPATIBLE": return "\u2713";
+            case "INCOMPATIBLE": return "\u2717";
+            case "PARTIAL": return "\u26A0";
+            default: return "?";
+        }
+    }
+
+    function renderResult(data) {
+        clearEl(resultPanel);
+
+        /* Verdict badge */
+        var badge = document.createElement("div");
+        badge.className = "verdict-badge " + data.verdict.toLowerCase();
+        badge.textContent = verdictIcon(data.verdict) + " " + data.verdict;
+        resultPanel.appendChild(badge);
+
+        /* Device summaries */
+        var devRow = document.createElement("div");
+        devRow.className = "result-devices";
+        if (data.device_a) devRow.appendChild(makeDeviceBox(data.device_a, "A"));
+        if (data.device_b) devRow.appendChild(makeDeviceBox(data.device_b, "B"));
+        resultPanel.appendChild(devRow);
+
+        /* Explanation */
+        if (data.explanation) {
+            var expl = document.createElement("div");
+            expl.className = "result-explanation";
+            expl.textContent = data.explanation;
+            resultPanel.appendChild(expl);
+        }
+
+        /* Lists */
+        if (data.requirements && data.requirements.length)
+            resultPanel.appendChild(makeResultList("Requirements", data.requirements));
+        if (data.limitations && data.limitations.length)
+            resultPanel.appendChild(makeResultList("Limitations", data.limitations));
+        if (data.alternatives && data.alternatives.length)
+            resultPanel.appendChild(makeResultList("Alternatives", data.alternatives));
+
+        resultPanel.style.display = "block";
+    }
+
+    function makeDeviceBox(dev, label) {
+        var box = document.createElement("div");
+        box.className = "result-device";
+        var name = document.createElement("div");
+        name.className = "rd-name";
+        name.textContent = (label ? "Device " + label + ": " : "") + (dev.display_name || dev.id);
+        box.appendChild(name);
+        var tp = document.createElement("div");
+        tp.className = "rd-type";
+        tp.textContent = dev.device_type || "";
+        box.appendChild(tp);
+        return box;
+    }
+
+    function makeResultList(title, items) {
+        var wrap = document.createElement("div");
+        wrap.className = "result-list";
+        var h = document.createElement("h4");
+        h.textContent = title;
+        wrap.appendChild(h);
+        var ul = document.createElement("ul");
+        for (var i = 0; i < items.length; i++) {
+            var li = document.createElement("li");
+            li.textContent = items[i];
+            ul.appendChild(li);
+        }
+        wrap.appendChild(ul);
+        return wrap;
+    }
+
+    /* --- Device table --- */
+    var currentFilter = "all";
+
+    function renderDeviceTable(list) {
+        clearEl(deviceTableBody);
+        for (var i = 0; i < list.length; i++) {
+            var d = list[i];
+            var tr = document.createElement("tr");
+            tr.className = "clickable";
+
+            var tdMfr = document.createElement("td");
+            tdMfr.textContent = d.manufacturer;
+            tr.appendChild(tdMfr);
+
+            var tdModel = document.createElement("td");
+            tdModel.textContent = d.model;
+            tr.appendChild(tdModel);
+
+            var tdType = document.createElement("td");
+            tdType.textContent = d.device_type;
+            tr.appendChild(tdType);
+
+            var tdFreq = document.createElement("td");
+            tdFreq.textContent = getFreqProto(d);
+            tr.appendChild(tdFreq);
+
+            var tdNotes = document.createElement("td");
+            tdNotes.textContent = d.notes || "";
+            tr.appendChild(tdNotes);
+
+            (function(deviceId, deviceName) {
+                tr.addEventListener("click", function() {
+                    loadSingleDevice(deviceId, deviceName);
+                });
+            })(d.id, d.display_name);
+
+            deviceTableBody.appendChild(tr);
+        }
+    }
+
+    function applyFilter(filter) {
+        currentFilter = filter;
+        var btns = filterRow.querySelectorAll(".filter-btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].className = "filter-btn" + (btns[i].getAttribute("data-filter") === filter ? " active" : "");
+        }
+        if (filter === "all") {
+            renderDeviceTable(devices);
+        } else {
+            renderDeviceTable(devices.filter(function(d) { return d.device_type === filter; }));
+        }
+    }
+
+    filterRow.addEventListener("click", function(e) {
+        var btn = e.target.closest(".filter-btn");
+        if (btn) applyFilter(btn.getAttribute("data-filter"));
+    });
+
+    /* --- Single device compat list --- */
+    function loadSingleDevice(deviceId, deviceName) {
+        clearEl(singleDevicePanel);
+        singleDevicePanel.style.display = "block";
+
+        var heading = document.createElement("h3");
+        heading.textContent = "Compatible devices for: " + deviceName;
+        singleDevicePanel.appendChild(heading);
+
+        var loading = document.createElement("p");
+        loading.textContent = "Loading...";
+        loading.style.color = "#999";
+        singleDevicePanel.appendChild(loading);
+
+        fetch("/api/compatible/" + encodeURIComponent(deviceId))
+            .then(function(r) {
+                if (!r.ok) throw new Error("Not found");
+                return r.json();
+            })
+            .then(function(list) {
+                singleDevicePanel.removeChild(loading);
+                if (list.length === 0) {
+                    var none = document.createElement("p");
+                    none.textContent = "No compatible devices found in the database.";
+                    none.style.color = "#999";
+                    singleDevicePanel.appendChild(none);
+                } else {
+                    for (var i = 0; i < list.length; i++) {
+                        var row = document.createElement("div");
+                        row.className = "compat-list-item";
+
+                        var badge = document.createElement("span");
+                        badge.className = "mini-badge " + list[i].verdict.toLowerCase();
+                        badge.textContent = list[i].verdict;
+                        row.appendChild(badge);
+
+                        var nameSpan = document.createElement("span");
+                        nameSpan.textContent = list[i].display_name;
+                        row.appendChild(nameSpan);
+
+                        singleDevicePanel.appendChild(row);
+                    }
+                }
+
+                var backBtn = document.createElement("button");
+                backBtn.id = "singleBackBtn";
+                backBtn.textContent = "\u2190 Back to database";
+                backBtn.addEventListener("click", function() {
+                    singleDevicePanel.style.display = "none";
+                });
+                singleDevicePanel.appendChild(backBtn);
+
+                singleDevicePanel.scrollIntoView({behavior: "smooth", block: "start"});
+            })
+            .catch(function() {
+                loading.textContent = "Could not load compatibility data.";
+                loading.style.color = "#dc3545";
+            });
+    }
+})();
+</script>
+</body>
+</html>

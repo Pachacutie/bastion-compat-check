@@ -1,0 +1,1322 @@
+[
+    {
+        "id": "kwikset-914",
+        "manufacturer": "Kwikset",
+        "model": "914",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave smart lock. Works with Z-Wave enabled panels.",
+        "discontinued": false
+    },
+    {
+        "id": "schlage-be469",
+        "manufacturer": "Schlage",
+        "model": "BE469",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Schlage Connect Z-Wave deadbolt.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-assure-sl",
+        "manufacturer": "Yale",
+        "model": "Assure Lock SL",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Yale Z-Wave Plus smart lock.",
+        "discontinued": false
+    },
+    {
+        "id": "gocontrol-gd00z4",
+        "manufacturer": "GoControl",
+        "model": "GD00Z-4",
+        "peripheral_type": "garage_controller",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave garage door controller. Industry standard.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-t6-pro-zwave",
+        "manufacturer": "Honeywell",
+        "model": "T6 Pro Z-Wave",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave thermostat for panel integration.",
+        "discontinued": false
+    },
+    {
+        "id": "kwikset-smartcode-888",
+        "manufacturer": "Kwikset",
+        "model": "SmartCode 888",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus touchpad deadbolt. 30 user codes, SmartKey re-key. BHMA Grade 3.",
+        "discontinued": false
+    },
+    {
+        "id": "kwikset-smartcode-916",
+        "manufacturer": "Kwikset",
+        "model": "SmartCode 916",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus touchscreen deadbolt. 30 user codes, SmartKey re-key.",
+        "discontinued": false
+    },
+    {
+        "id": "schlage-connect-be469zp",
+        "manufacturer": "Schlage",
+        "model": "Connect BE469ZP",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus touchscreen deadbolt with built-in alarm sensor. ANSI Grade AAA. S2 encryption.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrd226",
+        "manufacturer": "Yale",
+        "model": "YRD226",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus touchscreen deadbolt. 250 user codes. ANSI Grade 2.",
+        "discontinued": false
+    },
+    {
+        "id": "august-smart-lock-pro",
+        "manufacturer": "August",
+        "model": "Smart Lock Pro",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus + Bluetooth. Retrofit (works with existing deadbolt). Wi-Fi requires separate bridge.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-t2000",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-T2000",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave thermostat designed for Alarm.com ecosystem. Touchscreen. Replaced 2GIG CT100.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-ct100",
+        "manufacturer": "2GIG",
+        "model": "CT100",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave thermostat. Discontinued from Alarm.com support (new accounts after May 2018).",
+        "discontinued": true
+    },
+    {
+        "id": "alarmcom-adc-v523",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V523",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "notes": "Indoor 1080p Wi-Fi camera with HDR. Alarm.com cloud required.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-v724w",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V724W",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "notes": "Outdoor 1080p Wi-Fi camera with HDR and two-way audio. IP66 weatherproof. Alarm.com cloud required.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-stick-up-cam",
+        "manufacturer": "Ring",
+        "model": "Stick Up Cam",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "notes": "1080p indoor/outdoor camera. Battery or wired. Ring ecosystem.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-video-doorbell",
+        "manufacturer": "Ring",
+        "model": "Video Doorbell",
+        "peripheral_type": "doorbell_camera",
+        "protocols": ["wifi"],
+        "notes": "1080p doorbell camera. Hardwired. Ring ecosystem.",
+        "discontinued": false
+    },
+    {
+        "id": "gocontrol-gd00z-8",
+        "manufacturer": "GoControl",
+        "model": "GD00Z-8",
+        "peripheral_type": "garage_controller",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus garage door controller. S2 security. Successor to GD00Z-4.",
+        "discontinued": false
+    },
+    {
+        "id": "dome-dms01",
+        "manufacturer": "Dome",
+        "model": "DMS01",
+        "peripheral_type": "siren",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus battery siren/chime. 105 dB. 10 sounds, 3 volume levels.",
+        "discontinued": false
+    },
+    {
+        "id": "ge-jasco-14294",
+        "manufacturer": "GE/Jasco",
+        "model": "14294 Enbrighten",
+        "peripheral_type": "dimmer",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus in-wall dimmer. 600W incandescent, 300W LED. Acts as repeater.",
+        "discontinued": false
+    },
+    {
+        "id": "ge-jasco-14289",
+        "manufacturer": "GE/Jasco",
+        "model": "14289 Enbrighten",
+        "peripheral_type": "outlet",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus in-wall outlet. One controlled + one always-on. 15A. Acts as repeater.",
+        "discontinued": false
+    },
+    {
+        "id": "leviton-dz15s",
+        "manufacturer": "Leviton",
+        "model": "DZ15S Decora Smart",
+        "peripheral_type": "light_switch",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus in-wall switch. 15A/120VAC. Low-wattage compatible.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-rptr1-345",
+        "manufacturer": "2GIG",
+        "model": "RPTR1-345",
+        "peripheral_type": "repeater",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "345MHz wireless repeater for extending sensor range. NOT 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-rptr1e",
+        "manufacturer": "2GIG",
+        "model": "RPTR1e",
+        "peripheral_type": "repeater",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "eSeries encrypted 345MHz repeater.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-ts1",
+        "manufacturer": "2GIG",
+        "model": "TS1",
+        "peripheral_type": "keypad",
+        "protocols": ["900mhz_fhss"],
+        "notes": "4.3-inch wireless touchscreen keypad. 900MHz FHSS. Up to 4 per system.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-sp2",
+        "manufacturer": "2GIG",
+        "model": "SP2",
+        "peripheral_type": "keypad",
+        "protocols": ["wifi"],
+        "notes": "7-inch secondary touchscreen for GC3/GC3e. Wi-Fi. Full Android. Model 2GIG-SP2-GC3.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-edg-rk",
+        "manufacturer": "2GIG",
+        "model": "EDG-RK",
+        "peripheral_type": "keypad",
+        "protocols": ["wifi"],
+        "notes": "7-inch EDGE remote keypad. Wi-Fi dual band. Built-in camera. Up to 8 per EDGE.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-stz1",
+        "manufacturer": "2GIG",
+        "model": "STZ-1",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave programmable thermostat. Replaces CT100.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800rp",
+        "manufacturer": "Honeywell",
+        "model": "5800RP",
+        "peripheral_type": "repeater",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "345MHz wireless repeater for Honeywell 5800 series sensors.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-hub-touchscreen",
+        "manufacturer": "Frontpoint",
+        "model": "Hub Touchscreen",
+        "peripheral_type": "keypad",
+        "protocols": ["proprietary_rf"],
+        "platform": "alarm_com",
+        "notes": "Touchscreen accessory for Frontpoint Hub. Wall-mounted secondary control.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-hub-keypad",
+        "manufacturer": "Frontpoint",
+        "model": "Hub Keypad",
+        "peripheral_type": "keypad",
+        "protocols": ["proprietary_rf"],
+        "platform": "alarm_com",
+        "notes": "Wireless keypad for Frontpoint Hub. 2x AA batteries. Arm/disarm/panic.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-range-extender",
+        "manufacturer": "Frontpoint",
+        "model": "Range Extender Kit 80-922",
+        "peripheral_type": "repeater",
+        "protocols": ["319mhz_proprietary"],
+        "platform": "alarm_com",
+        "notes": "319.5MHz wireless repeater for extending Frontpoint sensor range.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-talking-touchpad",
+        "manufacturer": "Frontpoint",
+        "model": "Talking Remote Touchpad",
+        "peripheral_type": "keypad",
+        "protocols": ["proprietary_rf"],
+        "platform": "alarm_com",
+        "notes": "Voice-enabled touchpad for Simon XT panel. Obsolete with Simon XT.",
+        "discontinued": true
+    },
+    {
+        "id": "alarmcom-adc-v516",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V516",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Current indoor Wi-Fi camera. Sold by Frontpoint, Alarm.com ecosystem. Replaces V515/V522IR.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-v724",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V724",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Current outdoor Wi-Fi camera. Available from Frontpoint and other Alarm.com dealers.Alarm.com cloud required.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-v729",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V729",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Premium floodlight camera. Available from Frontpoint and other Alarm.com dealers.Built-in floodlight + motion detection.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-v730",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V730",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Wired Outdoor Camera 3.0. Available from Frontpoint and other Alarm.com dealers.Alarm.com cloud required.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-v731b",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V731B",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Wireless outdoor camera. Battery-powered. Available from Frontpoint and other Alarm.com dealers.Alarm.com cloud required.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-slimline-doorbell-2",
+        "manufacturer": "Alarm.com",
+        "model": "Slimline Doorbell 2.0",
+        "peripheral_type": "doorbell_camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Current wired doorbell camera. Slim form factor. Available from Frontpoint and other Alarm.com dealers.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-vdb780b",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-VDB780B",
+        "peripheral_type": "doorbell_camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Wireless doorbell camera. Battery-powered. Available from Frontpoint and other Alarm.com dealers.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-w115c",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-W115C",
+        "peripheral_type": "chime",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Smart chime for Alarm.com doorbell cameras. Wi-Fi connected.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-v510",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V510",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Early indoor Wi-Fi camera. Available from Frontpoint and other Alarm.com dealers.",
+        "discontinued": true
+    },
+    {
+        "id": "alarmcom-adc-v622",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-V622",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "alarm_com",
+        "notes": "Premium indoor camera with pan/tilt. Available from Frontpoint and other Alarm.com dealers.",
+        "discontinued": true
+    },
+    {
+        "id": "alarmcom-adc-t3000",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-T3000",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Z-Wave Plus smart thermostat. 2x AAA batteries. Available from Frontpoint and other Alarm.com dealers.Alarm.com cloud.",
+        "discontinued": false
+    },
+    {
+        "id": "schlage-be468",
+        "manufacturer": "Schlage",
+        "model": "BE468",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave deadbolt lock. 4x AA batteries. Previously sold by Frontpoint.",
+        "discontinued": true
+    },
+    {
+        "id": "yale-yrd156-zw2-0bp",
+        "manufacturer": "Yale",
+        "model": "YRD156-ZW2-0BP",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus touchscreen deadbolt (oil rubbed bronze). 4x AA batteries. Available through Frontpoint.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrd156-zw2-19",
+        "manufacturer": "Yale",
+        "model": "YRD156-ZW2-19",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus touchscreen deadbolt (satin nickel). 4x AA batteries. Available through Frontpoint.",
+        "discontinued": false
+    },
+    {
+        "id": "jasco-zw4104",
+        "manufacturer": "Jasco",
+        "model": "ZW4104",
+        "peripheral_type": "outlet",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave wireless plug-in light/appliance control. Available from Frontpoint and other Alarm.com dealers.",
+        "discontinued": true
+    },
+    {
+        "id": "jasco-76722",
+        "manufacturer": "Jasco",
+        "model": "Pro 76722",
+        "peripheral_type": "outlet",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus outdoor smart plug 3.0. Weather-resistant. Available through Frontpoint.",
+        "discontinued": false
+    },
+    {
+        "id": "jasco-79244",
+        "manufacturer": "Jasco",
+        "model": "79244 Indoor Smart Plug",
+        "peripheral_type": "outlet",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus indoor smart plug. Available through Frontpoint. Replaces Jasco ZW4104. S2 security support.",
+        "discontinued": false
+    },
+    {
+        "id": "jasco-zw4203",
+        "manufacturer": "Jasco",
+        "model": "ZW4203 Outdoor Smart Plug 2.0",
+        "peripheral_type": "outlet",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave outdoor smart plug. Replaced by Jasco Pro 76722 (3.0).",
+        "discontinued": true
+    },
+    {
+        "id": "alarmcom-solar-panel",
+        "manufacturer": "Alarm.com",
+        "model": "Solar Panel",
+        "peripheral_type": "accessory",
+        "protocols": [],
+        "platform": "alarm_com",
+        "notes": "Solar panel for Alarm.com wireless outdoor cameras (ADC-V731B). Extends battery life.",
+        "discontinued": false
+    },
+    {
+        "id": "kwikset-910",
+        "manufacturer": "Kwikset",
+        "model": "910TRL ZW500",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave deadbolt. SmartKey re-key. Compatible with Frontpoint systems. Confirmed third-party lock.",
+        "discontinued": false
+    },
+    {
+        "id": "kwikset-912",
+        "manufacturer": "Kwikset",
+        "model": "912TNL TRL ZW500",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave lever lock. SmartKey re-key. Compatible with Frontpoint systems. Confirmed third-party lock.",
+        "discontinued": false
+    },
+    {
+        "id": "schlage-be469nx",
+        "manufacturer": "Schlage",
+        "model": "BE469NX CAM",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Schlage Connect Z-Wave Plus deadbolt with Camelot trim. Compatible with Frontpoint systems. Confirmed.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrd220-zw",
+        "manufacturer": "Yale",
+        "model": "YRD220-ZW",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Yale Z-Wave touchscreen deadbolt. Compatible with Frontpoint systems. Confirmed third-party lock.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrd210-zw",
+        "manufacturer": "Yale",
+        "model": "YRD210-ZW",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Yale Z-Wave push-button deadbolt. Compatible with Frontpoint systems. Confirmed third-party lock.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrl210-zw",
+        "manufacturer": "Yale",
+        "model": "YRL210-ZW",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Yale Z-Wave push-button lever lock. Compatible with Frontpoint systems. Confirmed third-party lock.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrl220-zw",
+        "manufacturer": "Yale",
+        "model": "YRL220-ZW",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave"],
+        "notes": "Yale Z-Wave touchscreen lever lock. Compatible with Frontpoint systems. Confirmed third-party lock.",
+        "discontinued": false
+    },
+    {
+        "id": "fortrezz-ssa01",
+        "manufacturer": "Fortrezz",
+        "model": "SSA-01",
+        "peripheral_type": "siren",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave indoor siren/strobe. Compatible with Alarm.com-based panels including Frontpoint.",
+        "discontinued": false
+    },
+    {
+        "id": "fortrezz-ssa02",
+        "manufacturer": "Fortrezz",
+        "model": "SSA-02",
+        "peripheral_type": "siren",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave indoor siren/strobe (updated model). Compatible with Frontpoint systems. Confirmed.",
+        "discontinued": false
+    },
+    {
+        "id": "aeotec-zw080",
+        "manufacturer": "Aeotec",
+        "model": "ZW080-A17",
+        "peripheral_type": "siren",
+        "protocols": ["zwave"],
+        "notes": "Aeotec Z-Wave siren Gen5. Compatible with Frontpoint systems. Confirmed third-party siren.",
+        "discontinued": false
+    },
+    {
+        "id": "trane-tzemt400",
+        "manufacturer": "Trane",
+        "model": "TZEMT400AB32MAA",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Trane Z-Wave thermostat. Compatible with Frontpoint systems. Confirmed.",
+        "discontinued": false
+    },
+    {
+        "id": "trane-tzemt500",
+        "manufacturer": "Trane",
+        "model": "TZEMT500AB32MAA",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Trane Z-Wave thermostat (touchscreen). Compatible with Frontpoint systems. Confirmed.",
+        "discontinued": false
+    },
+    {
+        "id": "radiothermostat-ct110",
+        "manufacturer": "Radio Thermostats",
+        "model": "CT110",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave thermostat with touchscreen. Compatible with Frontpoint systems. Confirmed.",
+        "discontinued": false
+    },
+    {
+        "id": "radiothermostat-ct32",
+        "manufacturer": "Radio Thermostats",
+        "model": "CT32",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave thermostat. Compatible with Frontpoint systems. Confirmed.",
+        "discontinued": false
+    },
+    {
+        "id": "stelpro-stzw402",
+        "manufacturer": "Stelpro",
+        "model": "STZW402",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave baseboard heater thermostat. Compatible with Frontpoint systems. Confirmed. 240V line voltage.",
+        "discontinued": false
+    },
+    {
+        "id": "linear-gc-tbz48",
+        "manufacturer": "Linear",
+        "model": "GC-TBZ48",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave thermostat. Compatible with Frontpoint systems. Confirmed.",
+        "discontinued": false
+    },
+    {
+        "id": "ge-45603",
+        "manufacturer": "GE",
+        "model": "45603",
+        "peripheral_type": "outlet",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave plug-in lamp module. Compatible with Frontpoint systems. Confirmed (discontinued).",
+        "discontinued": true
+    },
+    {
+        "id": "ge-45602",
+        "manufacturer": "GE",
+        "model": "45602",
+        "peripheral_type": "dimmer",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave plug-in dimmer module. Compatible with Frontpoint systems. Confirmed.",
+        "discontinued": true
+    },
+    {
+        "id": "evolve-lpm15",
+        "manufacturer": "Evolve",
+        "model": "LPM-15",
+        "peripheral_type": "outlet",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave plug-in lamp module. Compatible with Frontpoint systems. Confirmed third-party.",
+        "discontinued": true
+    },
+    {
+        "id": "evolve-ldm15",
+        "manufacturer": "Evolve",
+        "model": "LDM-15",
+        "peripheral_type": "dimmer",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave plug-in dimmer. Compatible with Frontpoint systems. Confirmed third-party.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-6160rf",
+        "manufacturer": "Honeywell",
+        "model": "6160RF",
+        "peripheral_type": "keypad",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "Alpha-display wired keypad with integrated 345MHz RF receiver. For VISTA panels. Adds wireless zones.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-6160",
+        "manufacturer": "Honeywell",
+        "model": "6160",
+        "peripheral_type": "keypad",
+        "protocols": [],
+        "notes": "Standard alpha-display wired keypad for VISTA panels. No RF receiver.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-tuxedow",
+        "manufacturer": "Honeywell",
+        "model": "TUXEDOW",
+        "peripheral_type": "keypad",
+        "protocols": ["zwave_plus"],
+        "notes": "7-inch touchscreen keypad/controller for VISTA panels. Z-Wave Plus. Wi-Fi. Camera viewing. Replaces TUXWIFIW.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5828v",
+        "manufacturer": "Honeywell",
+        "model": "5828V",
+        "peripheral_type": "keypad",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "Wireless talking keypad. Voice announces status. 50ft range. Battery-powered. For VISTA/LYNX.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800c2w",
+        "manufacturer": "Honeywell",
+        "model": "5800C2W",
+        "peripheral_type": "translator",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "Hardwired-to-wireless converter. 9 wired zones to 345MHz wireless. Powers wired PIRs. 4hr battery backup.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5881enh",
+        "manufacturer": "Honeywell",
+        "model": "5881ENH",
+        "peripheral_type": "receiver",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "Unlimited-zone wireless receiver for 5800 series. Connects to VISTA keypad bus. 200ft range.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixsiren",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXSIREN",
+        "peripheral_type": "siren",
+        "protocols": ["six_series"],
+        "notes": "PROSiX indoor wireless siren/strobe. 85dB. Red + white strobe. For ProSeries panels. Replaces SiXSIREN.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixsireno",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXSIRENO",
+        "peripheral_type": "siren",
+        "protocols": ["six_series"],
+        "notes": "PROSiX outdoor wireless siren. Weather-resistant. For ProSeries panels.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-60-924-rf-ts",
+        "manufacturer": "Interlogix",
+        "model": "60-924-RF-TS",
+        "peripheral_type": "keypad",
+        "protocols": ["319mhz_proprietary"],
+        "notes": "Wireless 2-way talking touchscreen keypad for Simon XT. Color LCD.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-nx-148e-rf",
+        "manufacturer": "Interlogix",
+        "model": "NX-148E-RF",
+        "peripheral_type": "keypad",
+        "protocols": ["319mhz_proprietary"],
+        "notes": "LCD keypad with built-in 319.5MHz wireless receiver for NetworX panels. Combination keypad + receiver.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-nx-148e",
+        "manufacturer": "Interlogix",
+        "model": "NX-148E",
+        "peripheral_type": "keypad",
+        "protocols": [],
+        "notes": "LCD alpha-display keypad for NetworX panels. 192-zone programmable. Hardwired.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-nx-548e",
+        "manufacturer": "Interlogix",
+        "model": "NX-548E",
+        "peripheral_type": "receiver",
+        "protocols": ["319mhz_proprietary"],
+        "notes": "48-zone wireless receiver for NetworX panels. 319.5MHz. Latest generation. Adds wireless sensor support to hardwired NX panels.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-nx-448e",
+        "manufacturer": "Interlogix",
+        "model": "NX-448E",
+        "peripheral_type": "receiver",
+        "protocols": ["319mhz_proprietary"],
+        "notes": "48-zone wireless receiver for NetworX panels. 319.5MHz. Replaced by NX-548E.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-80-922",
+        "manufacturer": "Interlogix",
+        "model": "80-922-1",
+        "peripheral_type": "repeater",
+        "protocols": ["319mhz_proprietary"],
+        "notes": "Wireless 319.5MHz signal repeater. Dual-antenna. Tamper-protected. Compatible with SAW + Crystal sensors.",
+        "discontinued": true
+    },
+    {
+        "id": "alula-re524x",
+        "manufacturer": "Alula",
+        "model": "RE524X",
+        "peripheral_type": "translator",
+        "protocols": ["319mhz_proprietary", "345mhz_proprietary", "433mhz_proprietary"],
+        "notes": "Multi-frequency wireless translator. Translates 319.5/345/433MHz sensors between brands. 128 sensors. Does NOT translate smoke/CO/heat (life safety). Critical cross-brand compatibility tool.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-re152",
+        "manufacturer": "Alula",
+        "model": "RE152",
+        "peripheral_type": "keypad",
+        "protocols": ["319mhz_proprietary"],
+        "notes": "Wireless PINpad keypad. 319.5MHz. For GE/Interlogix/Qolsys panels.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-re252",
+        "manufacturer": "Alula",
+        "model": "RE252",
+        "peripheral_type": "keypad",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "Wireless PINpad keypad. 345MHz. For Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-re100",
+        "manufacturer": "Alula",
+        "model": "RE100",
+        "peripheral_type": "key_fob",
+        "protocols": ["319mhz_proprietary"],
+        "notes": "4-button wireless keyfob. 319.5MHz. For GE/Interlogix/Qolsys panels. 5-button variant: RE100-5.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-re200",
+        "manufacturer": "Alula",
+        "model": "RE200",
+        "peripheral_type": "key_fob",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "4-button wireless keyfob. 345MHz. For Honeywell/2GIG panels. 5-button variant: RE200-5.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-re657wf",
+        "manufacturer": "Alula",
+        "model": "RE657WF",
+        "peripheral_type": "keypad",
+        "protocols": ["wifi"],
+        "notes": "7-inch color touchscreen keypad for Connect+ panel. Wi-Fi. Wall/table mount.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-re220",
+        "manufacturer": "Alula",
+        "model": "RE220",
+        "peripheral_type": "repeater",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "345MHz signal repeater for translator. For Honeywell/2GIG ecosystem.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-keypad",
+        "manufacturer": "SimpliSafe",
+        "model": "Keypad (SSKP3)",
+        "peripheral_type": "keypad",
+        "protocols": ["simplisafe_proprietary"],
+        "notes": "SimpliSafe Gen 3 wireless keypad. Touch-to-wake. 4x AA batteries. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-siren",
+        "manufacturer": "SimpliSafe",
+        "model": "Auxiliary Siren (SSWS3)",
+        "peripheral_type": "siren",
+        "protocols": ["simplisafe_proprietary"],
+        "notes": "SimpliSafe Gen 3 auxiliary siren. 105dB. Weather-resistant. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-indoor-cam",
+        "manufacturer": "SimpliSafe",
+        "model": "SimpliCam Indoor (SCM200)",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "simplisafe_platform",
+        "notes": "1080p wired indoor camera. WiFi 2.4GHz. Requires SimpliSafe base station.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-outdoor-cam",
+        "manufacturer": "SimpliSafe",
+        "model": "Outdoor Camera Series 2",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "simplisafe_platform",
+        "notes": "1080p wireless outdoor camera. Battery-powered. WiFi. Requires SimpliSafe base station.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-doorbell",
+        "manufacturer": "SimpliSafe",
+        "model": "Video Doorbell Pro (SSDB3)",
+        "peripheral_type": "doorbell_camera",
+        "protocols": ["wifi"],
+        "platform": "simplisafe_platform",
+        "notes": "1080p wired video doorbell. 162-degree FOV. Requires SimpliSafe base station.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-smart-lock",
+        "manufacturer": "SimpliSafe",
+        "model": "Smart Lock Series 2",
+        "peripheral_type": "smart_lock",
+        "protocols": ["wifi"],
+        "platform": "simplisafe_platform",
+        "notes": "WiFi smart lock. PIN pad + app + key fob control. Requires SimpliSafe base station. Auto-lock on arm.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-element-thermostat",
+        "manufacturer": "Vivint",
+        "model": "Element Thermostat (CT200)",
+        "peripheral_type": "thermostat",
+        "protocols": ["zwave"],
+        "platform": "vivint_platform",
+        "notes": "Vivint-branded Z-Wave thermostat. Touch screen. Z-Wave certified.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-outdoor-cam-pro",
+        "manufacturer": "Vivint",
+        "model": "Outdoor Camera Pro Gen 2 (VS-ODC350)",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "vivint_platform",
+        "notes": "1080p FHD outdoor camera. 4K HDR sensor. 140 FOV. LOCKED to Vivint cloud — no ONVIF/RTSP.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-doorbell-cam-pro",
+        "manufacturer": "Vivint",
+        "model": "Doorbell Camera Pro Gen 2 (VS-DBC350)",
+        "peripheral_type": "doorbell_camera",
+        "protocols": ["wifi"],
+        "platform": "vivint_platform",
+        "notes": "1664x1664 video doorbell. 180x180 FOV. Wired only. LOCKED to Vivint cloud.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-glance",
+        "manufacturer": "Vivint",
+        "model": "Glance Display (V-SHD1)",
+        "peripheral_type": "keypad",
+        "protocols": ["wifi"],
+        "platform": "vivint_platform",
+        "notes": "Secondary touchscreen display. Max 2 per system. Wall-mount or tabletop.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-keypad-gen2",
+        "manufacturer": "Ring",
+        "model": "Keypad Gen 2 (4AK1SZ)",
+        "peripheral_type": "keypad",
+        "protocols": ["zwave"],
+        "platform": "ring_platform",
+        "notes": "Ring Alarm wireless keypad. Z-Wave 700. LED display. Battery or USB-C powered.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-range-extender",
+        "manufacturer": "Ring",
+        "model": "Range Extender Gen 2 (4AR1SZ)",
+        "peripheral_type": "repeater",
+        "protocols": ["zwave"],
+        "platform": "ring_platform",
+        "notes": "Z-Wave 700 range extender for Ring Alarm. Plug-in. Also doubles as backup siren.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-panic-button",
+        "manufacturer": "Ring",
+        "model": "Panic Button",
+        "peripheral_type": "panic",
+        "protocols": ["zwave"],
+        "platform": "ring_platform",
+        "notes": "Ring Alarm panic button. Z-Wave.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-retrofit-kit",
+        "manufacturer": "Ring",
+        "model": "Retrofit Alarm Kit",
+        "peripheral_type": "translator",
+        "protocols": ["zwave"],
+        "platform": "ring_platform",
+        "notes": "Converts wired alarm sensor zones to Ring Alarm Z-Wave. For existing wired sensor takeover.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-floodlight-cam",
+        "manufacturer": "Ring",
+        "model": "Floodlight Cam Wired Plus",
+        "peripheral_type": "camera",
+        "protocols": ["wifi"],
+        "platform": "ring_platform",
+        "notes": "1080p outdoor camera with 2000 lumen floodlights. Ring ecosystem.",
+        "discontinued": false
+    },
+    {
+        "id": "ecobee-premium",
+        "manufacturer": "Ecobee",
+        "model": "Smart Thermostat Premium (EB-STATE6)",
+        "peripheral_type": "thermostat",
+        "protocols": ["wifi"],
+        "notes": "WiFi thermostat. NO Z-Wave. Air quality monitor, smoke alarm detection, radar occupancy. Alarm.com integration via CLOUD API only — not panel Z-Wave pairing.",
+        "discontinued": false
+    },
+    {
+        "id": "ecobee-enhanced",
+        "manufacturer": "Ecobee",
+        "model": "Smart Thermostat Enhanced (EB-STATE6L)",
+        "peripheral_type": "thermostat",
+        "protocols": ["wifi"],
+        "notes": "WiFi thermostat. NO Z-Wave. Radar occupancy sensing. Alarm.com cloud integration only.",
+        "discontinued": false
+    },
+    {
+        "id": "ecobee-essential",
+        "manufacturer": "Ecobee",
+        "model": "Smart Thermostat Essential (EB-STATE7)",
+        "peripheral_type": "thermostat",
+        "protocols": ["wifi"],
+        "notes": "WiFi thermostat. NO Z-Wave. Entry-level. Alarm.com cloud integration only. Replaces ecobee3 lite.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-keypad",
+        "manufacturer": "Abode",
+        "model": "Keypad 2",
+        "peripheral_type": "keypad",
+        "protocols": ["abode_proprietary"],
+        "platform": "abode_platform",
+        "notes": "AbodeRF 433MHz wireless keypad. 40 PIN codes. Panic/fire/health buttons. Battery-powered.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-siren-indoor",
+        "manufacturer": "Abode",
+        "model": "Indoor Siren",
+        "peripheral_type": "siren",
+        "protocols": ["abode_proprietary"],
+        "platform": "abode_platform",
+        "notes": "AbodeRF 433MHz indoor siren. 95dB. AC + 12hr rechargeable battery backup.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-siren-outdoor",
+        "manufacturer": "Abode",
+        "model": "Outdoor Siren w/ Strobe",
+        "peripheral_type": "siren",
+        "protocols": ["abode_proprietary"],
+        "platform": "abode_platform",
+        "notes": "AbodeRF 433MHz outdoor siren. 107dB + strobe. 2x D-cell, 3yr battery.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-m1xrf319",
+        "manufacturer": "Elk Products",
+        "model": "M1XRF319",
+        "peripheral_type": "receiver",
+        "protocols": ["319mhz_proprietary"],
+        "notes": "319.5MHz wireless receiver for Elk M1. Dual antenna. Accepts Elk 319 Series + GE/Interlogix Crystal sensors. Up to 144 wireless zones.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-m1xrf2h",
+        "manufacturer": "Elk Products",
+        "model": "M1XRF2H",
+        "peripheral_type": "receiver",
+        "protocols": ["345mhz_proprietary"],
+        "notes": "345MHz wireless receiver for Elk M1. Dual antenna. Accepts Honeywell 5800 series sensors. Up to 144 wireless zones.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-m1xrftw",
+        "manufacturer": "Elk Products",
+        "model": "M1XRFTW",
+        "peripheral_type": "receiver",
+        "protocols": ["proprietary_rf"],
+        "notes": "902-928MHz FHSS two-way transceiver for Elk M1. For Elk 6000 Series sensors only. 50-channel frequency hopping. Anti-jamming.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-m1kp2",
+        "manufacturer": "Elk Products",
+        "model": "M1KP2",
+        "peripheral_type": "keypad",
+        "protocols": [],
+        "notes": "Elk low-profile LCD keypad. 32-char blue/white backlit display. RS-485 wired. Up to 16 per system.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrd410-zw2",
+        "manufacturer": "Yale",
+        "model": "Assure Lock 2 Keypad (YRD410-ZW2)",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus via module. Pushbutton keypad. 250 codes. DoorSense hinge sensor. BHMA Grade 2.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrd420-zw2",
+        "manufacturer": "Yale",
+        "model": "Assure Lock 2 Touchscreen (YRD420-ZW2)",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus via module. Touchscreen keypad. 250 codes. DoorSense. BHMA Grade 2.",
+        "discontinued": false
+    },
+    {
+        "id": "yale-yrd450-zw2",
+        "manufacturer": "Yale",
+        "model": "Assure Lock 2 Key-Free (YRD450-ZW2)",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus via module. Key-free touchscreen (no physical key override). 250 codes.",
+        "discontinued": false
+    },
+    {
+        "id": "kwikset-hc620",
+        "manufacturer": "Kwikset",
+        "model": "Home Connect 620",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave 700 chip (Z-Wave Plus V2). S2 + SmartStart. 250 codes. SmartKey re-key. BHMA Grade 2. Replaces SmartCode Z-Wave line.",
+        "discontinued": false
+    },
+    {
+        "id": "ultraloq-bolt-zwave",
+        "manufacturer": "Ultraloq",
+        "model": "Bolt Z-Wave",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus V2 with Long Range support. Alarm.com integrated. Anti-peep keypad. Key backup.",
+        "discontinued": false
+    },
+    {
+        "id": "danalock-v3",
+        "manufacturer": "Danalock",
+        "model": "V3 Z-Wave Plus",
+        "peripheral_type": "smart_lock",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus retrofit lock. Fits over existing cylinder. Alarm.com compatible. S0+S2 security.",
+        "discontinued": false
+    },
+    {
+        "id": "schlage-encode-wifi",
+        "manufacturer": "Schlage",
+        "model": "Encode BE489WB",
+        "peripheral_type": "smart_lock",
+        "protocols": ["wifi"],
+        "notes": "WiFi + Bluetooth ONLY. NO Z-Wave. Cannot pair with alarm panels. 100 codes. BHMA AAA.",
+        "discontinued": false
+    },
+    {
+        "id": "schlage-encode-plus",
+        "manufacturer": "Schlage",
+        "model": "Encode Plus BE499WB",
+        "peripheral_type": "smart_lock",
+        "protocols": ["wifi"],
+        "notes": "WiFi + Bluetooth + Apple Home Key. NO Z-Wave. Cannot pair with alarm panels.",
+        "discontinued": false
+    },
+    {
+        "id": "august-wifi-4th",
+        "manufacturer": "August",
+        "model": "WiFi Smart Lock 4th Gen",
+        "peripheral_type": "smart_lock",
+        "protocols": ["wifi"],
+        "notes": "WiFi + Bluetooth ONLY. NO Z-Wave (unlike older Pro model). Retrofit design. Cannot pair with alarm panels.",
+        "discontinued": false
+    },
+    {
+        "id": "kwikset-halo",
+        "manufacturer": "Kwikset",
+        "model": "Halo Touchscreen",
+        "peripheral_type": "smart_lock",
+        "protocols": ["wifi"],
+        "notes": "WiFi ONLY. NO Z-Wave. 250 codes. SmartKey re-key. Cannot pair with alarm panels.",
+        "discontinued": false
+    },
+    {
+        "id": "nest-learning-4th",
+        "manufacturer": "Google",
+        "model": "Nest Learning Thermostat 4th Gen",
+        "peripheral_type": "thermostat",
+        "protocols": ["wifi"],
+        "notes": "WiFi + Matter + Thread. NO Z-Wave. Alarm.com cloud API integration (basic: temp/mode/fan). Dealer must enable Nest integration.",
+        "discontinued": false
+    },
+    {
+        "id": "nest-thermostat-2020",
+        "manufacturer": "Google",
+        "model": "Nest Thermostat (2020)",
+        "peripheral_type": "thermostat",
+        "protocols": ["wifi"],
+        "notes": "WiFi + Matter. Budget Nest. NO Z-Wave. Alarm.com cloud API integration (basic controls only).",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-t9",
+        "manufacturer": "Honeywell",
+        "model": "T9 (RCHT9610)",
+        "peripheral_type": "thermostat",
+        "protocols": ["wifi"],
+        "notes": "WiFi ONLY. NO Z-Wave (despite Honeywell making T6 Pro Z-Wave). No Alarm.com integration. Uses proprietary 900MHz for room sensors.",
+        "discontinued": false
+    },
+    {
+        "id": "myq-garage-hub",
+        "manufacturer": "LiftMaster",
+        "model": "MyQ Smart Garage Hub (MYQ-G0401)",
+        "peripheral_type": "garage_controller",
+        "protocols": ["wifi"],
+        "notes": "WiFi cloud-to-cloud. NOT Z-Wave. Alarm.com cloud integration (dealer enables LiftMaster feature, user links MyQ account). Chamberlain = same product, consumer brand.",
+        "discontinued": false
+    },
+    {
+        "id": "ecolink-gdzw7",
+        "manufacturer": "Ecolink",
+        "model": "GDZW7-ECO",
+        "peripheral_type": "garage_controller",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave 700 (Long Range) garage controller. Direct Z-Wave pairing. UL-325 certified. Alarm.com compatible. Newest Z-Wave garage controller on market.",
+        "discontinued": false
+    },
+    {
+        "id": "genie-aladdin-connect",
+        "manufacturer": "Genie",
+        "model": "Aladdin Connect",
+        "peripheral_type": "garage_controller",
+        "protocols": ["wifi"],
+        "notes": "WiFi cloud-to-cloud. NOT Z-Wave. Alarm.com cloud integration (dealer enables Garage Door add-on). Supports up to 3 doors.",
+        "discontinued": false
+    },
+    {
+        "id": "dome-dmwv1",
+        "manufacturer": "Dome",
+        "model": "DMWV1",
+        "peripheral_type": "water_valve",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus water shut-off valve. Clamps over existing 1/2-inch to 1.5-inch ball valve — no plumbing needed. 12V DC powered. Most popular DIY option.",
+        "discontinued": false
+    },
+    {
+        "id": "fortrezz-wv01",
+        "manufacturer": "FortrezZ",
+        "model": "WV-01",
+        "peripheral_type": "water_valve",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave inline brass ball valve. Professional install (requires plumber). 3/4-inch and 1-inch sizes. 250k cycle rating. Optional 12V battery backup.",
+        "discontinued": false
+    },
+    {
+        "id": "econet-ebv105",
+        "manufacturer": "EcoNet",
+        "model": "EBV105",
+        "peripheral_type": "water_valve",
+        "protocols": ["zwave"],
+        "notes": "Z-Wave water valve. Clamps over existing 1/2-inch to 1-inch ball valve. No plumbing needed. 12V DC powered.",
+        "discontinued": false
+    },
+    {
+        "id": "alarmcom-adc-swv100",
+        "manufacturer": "Alarm.com",
+        "model": "ADC-SWV100",
+        "peripheral_type": "water_valve",
+        "protocols": ["zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Alarm.com Z-Wave Plus S2 inline water valve. 1-inch brass NPT. Professional install. Alarm.com ecosystem.",
+        "discontinued": false
+    },
+    {
+        "id": "zooz-zen76",
+        "manufacturer": "Zooz",
+        "model": "ZEN76 800LR",
+        "peripheral_type": "light_switch",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave 800 Long Range on/off paddle switch. Direct 3-way. Neutral required. Up to 1300ft ZWLR range.",
+        "discontinued": false
+    },
+    {
+        "id": "zooz-zen77",
+        "manufacturer": "Zooz",
+        "model": "ZEN77 800LR",
+        "peripheral_type": "dimmer",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave 800 Long Range paddle dimmer. 100W LED, 300W incandescent. Direct 3-way/4-way. Neutral required.",
+        "discontinued": false
+    },
+    {
+        "id": "inovelli-red-vzw31",
+        "manufacturer": "Inovelli",
+        "model": "Red Series VZW31-SN",
+        "peripheral_type": "dimmer",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave 800 2-in-1 switch/dimmer. 21 scene options. RGB LED notification bar. No neutral option available.",
+        "discontinued": false
+    },
+    {
+        "id": "enbrighten-76591",
+        "manufacturer": "GE/Jasco",
+        "model": "Enbrighten 76591",
+        "peripheral_type": "light_switch",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave 800 Long Range on/off paddle switch. QuickFit + SimpleWire. Direct 3-way. Current generation Enbrighten.",
+        "discontinued": false
+    },
+    {
+        "id": "aeotec-zw175",
+        "manufacturer": "Aeotec",
+        "model": "Smart Switch 7 (ZW175)",
+        "peripheral_type": "outlet",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus S2 smart plug with power metering (99% accuracy). Inline plug. 15A.",
+        "discontinued": false
+    },
+    {
+        "id": "aeotec-zw078",
+        "manufacturer": "Aeotec",
+        "model": "Heavy Duty Switch (ZW078)",
+        "peripheral_type": "light_switch",
+        "protocols": ["zwave_plus"],
+        "notes": "Z-Wave Plus heavy duty switch. 40A / 9600W / 240V. For water heaters, pool pumps. Waterproof.",
+        "discontinued": false
+    }
+]

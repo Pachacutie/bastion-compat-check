@@ -1,0 +1,713 @@
+[
+    {
+        "device_a": "honeywell-5811",
+        "device_b": "qolsys-iq2-plus",
+        "verdict": "compatible",
+        "condition": "Requires 345MHz daughtercard installed in IQ Panel 2+",
+        "limitations": ["Temperature reporting may not function"],
+        "alternatives": [],
+        "source": "field_tested"
+    },
+    {
+        "device_a": "honeywell-5800pir",
+        "device_b": "ring-alarm-gen2",
+        "verdict": "incompatible",
+        "condition": "Ring Alarm uses Z-Wave only. 345MHz RF sensors are not supported.",
+        "limitations": [],
+        "alternatives": ["ecolink-pirzwave25"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "resolution-re201",
+        "device_b": "dsc-powerseries-neo",
+        "verdict": "incompatible",
+        "condition": "RE201 is 345MHz. DSC PowerSeries Neo uses 433MHz. Use RE301 (433MHz) for DSC.",
+        "limitations": [],
+        "alternatives": ["dsc-pg9303", "resolution-re301"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-sixct",
+        "device_b": "2gig-gc3e",
+        "verdict": "incompatible",
+        "condition": "SiX series sensors use encrypted 2.4GHz protocol. Only compatible with Honeywell Lyric, ProSeries PROA7PLUS, and ADT Command panels.",
+        "limitations": [],
+        "alternatives": ["honeywell-5811"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-sixpir",
+        "device_b": "qolsys-iq4",
+        "verdict": "incompatible",
+        "condition": "SiX series sensors use encrypted 2.4GHz protocol. Only compatible with Honeywell Lyric, ProSeries PROA7PLUS, and ADT Command panels.",
+        "limitations": [],
+        "alternatives": ["qolsys-qs1431-840"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5811",
+        "device_b": "2gig-gc3e",
+        "verdict": "compatible",
+        "condition": "Honeywell 345MHz sensors work natively on 2GIG panels that support 345MHz.",
+        "limitations": ["Temperature reporting may not function", "Honeywell-specific zone types may not map correctly"],
+        "alternatives": [],
+        "source": "field_tested"
+    },
+    {
+        "device_a": "2gig-dw10",
+        "device_b": "qolsys-iq2-plus",
+        "verdict": "compatible",
+        "condition": "2GIG 319.5MHz sensors work on Qolsys panels natively (same frequency).",
+        "limitations": ["Some advanced 2GIG features may not carry over"],
+        "alternatives": [],
+        "source": "field_tested"
+    },
+    {
+        "device_a": "2gig-dw10",
+        "device_b": "interlogix-simon-xti5",
+        "verdict": "compatible",
+        "condition": "Both use 319.5MHz proprietary RF. 2GIG sensors are compatible with Interlogix panels.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "field_tested"
+    },
+    {
+        "device_a": "dsc-pg9303",
+        "device_b": "qolsys-iq4",
+        "verdict": "compatible",
+        "condition": "Qolsys IQ Panel 4 has built-in 433MHz PowerG support. DSC PowerG sensors work natively.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "dsc-pg9303",
+        "device_b": "qolsys-iq2-plus",
+        "verdict": "compatible",
+        "condition": "Requires PowerG daughtercard installed in IQ Panel 2+.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "field_tested"
+    },
+    {
+        "device_a": "kwikset-914",
+        "device_b": "ring-alarm-gen2",
+        "verdict": "compatible",
+        "condition": "Ring Alarm Gen 2 supports third-party Z-Wave devices including locks.",
+        "limitations": ["Some lock features may be limited vs Ring-branded locks"],
+        "alternatives": [],
+        "source": "community_reported"
+    },
+    {
+        "device_a": "vivint-ping-camera",
+        "device_b": "2gig-gc3e",
+        "verdict": "incompatible",
+        "condition": "Vivint cameras are proprietary and only work with the Vivint Smart Hub ecosystem.",
+        "limitations": [],
+        "alternatives": ["alarmcom-adc-v523"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5800pir",
+        "device_b": "dsc-powerseries-neo",
+        "verdict": "incompatible",
+        "condition": "Honeywell 5800 series operates at 345MHz. DSC PowerSeries Neo uses 433MHz. Incompatible frequencies.",
+        "limitations": [],
+        "alternatives": ["dsc-pg9914p"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "2gig-dw30",
+        "device_b": "2gig-gc3e",
+        "verdict": "compatible",
+        "condition": "2GIG DW30 is 345MHz (not 319.5MHz like other 2GIG sensors). Compatible with GC3e which supports both frequencies.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "field_tested"
+    },
+    {
+        "device_a": "honeywell-sixct",
+        "device_b": "honeywell-proseries-proa7plus",
+        "verdict": "compatible",
+        "condition": "SiX series sensors work with ProSeries PROA7PLUS natively.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-sixct",
+        "device_b": "adt-command",
+        "verdict": "compatible",
+        "condition": "ADT Command panel uses SiX series (branded RF6) as primary sensor protocol.",
+        "limitations": ["ADT platform only — no Alarm.com integration"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "dsc-pg9303",
+        "device_b": "qolsys-iq-pro",
+        "verdict": "compatible",
+        "condition": "IQ Pro has native PowerG support (915MHz FHSS). DSC PowerG sensors work directly.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "kwikset-914",
+        "device_b": "vivint-smart-hub",
+        "verdict": "incompatible",
+        "condition": "Vivint Smart Hub restricts Z-Wave pairing to Vivint-branded or Vivint-approved devices only.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5800pir",
+        "device_b": "2gig-gc3e",
+        "verdict": "compatible",
+        "condition": "Honeywell 345MHz PIR works on 2GIG panels. Uni-directional sensor — compatible.",
+        "limitations": ["No two-way status feedback from sensor"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5811",
+        "device_b": "honeywell-vista-20p",
+        "verdict": "partial",
+        "condition": "Vista 20P is a hardwired panel. Requires separate 5881ENH or 5881ENM wireless receiver module to support ANY 5800 wireless sensors.",
+        "limitations": ["Requires separate wireless receiver module purchase", "Max wireless zones depends on receiver model"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-sixct",
+        "device_b": "honeywell-vista-20p",
+        "verdict": "incompatible",
+        "condition": "SiX series uses encrypted 2.4GHz protocol. Vista panels have no SiX receiver. SiX ONLY works with Lyric, ProSeries PROA7PLUS, and ADT Command.",
+        "limitations": [],
+        "alternatives": ["honeywell-5811", "honeywell-5800mini"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "dsc-pg9303",
+        "device_b": "2gig-gc3e",
+        "verdict": "incompatible",
+        "condition": "PowerG is a proprietary DSC/Johnson Controls encrypted protocol (915MHz FHSS). 2GIG panels have no PowerG receiver.",
+        "limitations": [],
+        "alternatives": ["2gig-dw10", "honeywell-5811"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "dsc-pg9303",
+        "device_b": "honeywell-lyric",
+        "verdict": "incompatible",
+        "condition": "PowerG is exclusive to DSC/Qolsys ecosystem. Honeywell panels cannot receive PowerG transmissions.",
+        "limitations": [],
+        "alternatives": ["honeywell-sixct", "honeywell-5811"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "firstalert-zcombo-g",
+        "device_b": "ring-alarm-gen2",
+        "verdict": "compatible",
+        "condition": "First Alert Z-Wave smoke/CO detector is the ONLY non-Ring sensor that can trigger Ring Alarm when armed. Specific exception to Ring's third-party restriction.",
+        "limitations": ["Only smoke/CO detection triggers alarm, not a general security sensor"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "ecolink-pirzwave25",
+        "device_b": "ring-alarm-gen2",
+        "verdict": "partial",
+        "condition": "Ring Alarm pairs third-party Z-Wave sensors but they CANNOT trigger the alarm when armed. They function only as smart home devices, not security devices.",
+        "limitations": ["Will NOT trigger alarm when system is armed", "No alarm notification to monitoring center", "Functions as smart home device only"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "qolsys-qs1135-840",
+        "device_b": "honeywell-vista-20p",
+        "verdict": "incompatible",
+        "condition": "Qolsys S-Line sensors operate at 319.5MHz. Honeywell Vista panels use 345MHz receivers only.",
+        "limitations": [],
+        "alternatives": ["honeywell-5811", "honeywell-5800mini"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "kwikset-914",
+        "device_b": "2gig-gc2",
+        "verdict": "partial",
+        "condition": "2GIG GC2 uses Z-Wave 500-series chip without S2 security support. Z-Wave locks will pair with S0 security only (weaker encryption).",
+        "limitations": ["No S2 security support on GC2", "Locks pair with S0 only (less secure)", "Some newer locks may refuse to pair without S2"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-dws-gen4",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Native Frontpoint sensor on Frontpoint Hub. Full feature support.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-dws-gen4",
+        "device_b": "qolsys-iq2-plus",
+        "verdict": "compatible",
+        "condition": "Frontpoint sensors are 319.5MHz. Qolsys IQ Panel 2+ supports 319.5MHz natively.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-dws-gen4",
+        "device_b": "honeywell-vista-20p",
+        "verdict": "incompatible",
+        "condition": "Frontpoint sensors are 319.5MHz. Honeywell Vista uses 345MHz only.",
+        "limitations": [],
+        "alternatives": ["honeywell-5811"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-dws-gen4",
+        "device_b": "ring-alarm-gen2",
+        "verdict": "incompatible",
+        "condition": "Ring Alarm uses Z-Wave only. 319.5MHz RF sensors not supported.",
+        "limitations": [],
+        "alternatives": ["ecolink-dwzwave25"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-dws-gen1",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Legacy Frontpoint sensor on current Hub. 319.5MHz backward compatible.",
+        "limitations": ["Sensor is obsolete — no replacement parts available"],
+        "alternatives": ["frontpoint-dws-gen4"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-motion-gen1",
+        "device_b": "frontpoint-display-hub-plus",
+        "verdict": "compatible",
+        "condition": "Legacy Interlogix-based motion sensor. 319.5MHz compatible with Display Hub+.",
+        "limitations": ["Sensor is obsolete — recommend upgrade to Gen 3.0"],
+        "alternatives": ["frontpoint-motion-gen3-0"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-dws-gen4",
+        "device_b": "2gig-gc3e",
+        "verdict": "compatible",
+        "condition": "Frontpoint 319.5MHz sensors work with 2GIG panels that support 319.5MHz.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-smoke-heat-gen3",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Current Frontpoint life-safety sensor on current Hub. Full supervision.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "yale-yrd156-zw2-0bp",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Z-Wave Plus lock on Frontpoint Hub with Z-Wave Plus support.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "yale-yrd156-zw2-0bp",
+        "device_b": "frontpoint-simon-xt",
+        "verdict": "incompatible",
+        "condition": "Frontpoint Simon XT has no Z-Wave radio. Cannot pair Z-Wave locks.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-dws-gen4",
+        "device_b": "dsc-powerseries-neo",
+        "verdict": "incompatible",
+        "condition": "Frontpoint sensors are 319.5MHz. DSC PowerSeries Neo uses 433MHz.",
+        "limitations": [],
+        "alternatives": ["dsc-pg9303"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "frontpoint-dws-gen4",
+        "device_b": "vivint-smart-hub",
+        "verdict": "incompatible",
+        "condition": "Vivint uses 345MHz. Frontpoint sensors are 319.5MHz. Incompatible frequencies.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "schlage-be469nx",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Compatible Z-Wave Plus lock. Full support on Hub.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "kwikset-914",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Compatible Z-Wave lock. Confirmed compatible via Z-Wave pairing.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "kwikset-914",
+        "device_b": "frontpoint-iq-touch",
+        "verdict": "compatible",
+        "condition": "Compatible Z-Wave lock on IQ Touch Panel.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "fortrezz-ssa01",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Compatible Z-Wave siren on Hub.",
+        "limitations": ["Z-Wave siren behavior may vary by panel — check panel settings for siren activation timing"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "fortrezz-ssa01",
+        "device_b": "frontpoint-simon-xt",
+        "verdict": "partial",
+        "condition": "Z-Wave siren on Simon XT. Works if Simon XT Z-Wave firmware is 183+.",
+        "limitations": ["Simon XT Z-Wave radio must be firmware 183 or higher for Z-Wave Plus compatibility"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "alarmcom-adc-t3000",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Compatible thermostat. Z-Wave Plus on Hub.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "alarmcom-adc-t2000",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Compatible thermostat. Z-Wave on Hub.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "gocontrol-gd00z4",
+        "device_b": "frontpoint-hub",
+        "verdict": "compatible",
+        "condition": "Compatible garage door controller on Hub.",
+        "limitations": ["Check garage door opener compatibility — not all openers supported"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "gocontrol-gd00z4",
+        "device_b": "frontpoint-simon-xt",
+        "verdict": "compatible",
+        "condition": "Compatible garage door controller on Simon XT.",
+        "limitations": ["Simon XT Z-Wave radio firmware 183+ recommended"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "gocontrol-gd00z4",
+        "device_b": "frontpoint-iq-touch",
+        "verdict": "compatible",
+        "condition": "Compatible garage door controller on IQ Touch Panel.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "2gig-ct100",
+        "device_b": "frontpoint-hub",
+        "verdict": "incompatible",
+        "condition": "Alarm.com ended support for 2GIG CT-100 thermostat on new accounts (May 2018+).",
+        "limitations": ["Only works on Alarm.com accounts created before May 2018"],
+        "alternatives": ["alarmcom-adc-t2000", "alarmcom-adc-t3000"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "simplisafe-entry",
+        "device_b": "honeywell-proseries-proa7plus",
+        "verdict": "incompatible",
+        "condition": "SimpliSafe is a CLOSED ECOSYSTEM. SimpliSafe sensors use proprietary 433MHz protocol (OOK) and ONLY work with SimpliSafe base stations. Not compatible with any third-party panel.",
+        "limitations": [],
+        "alternatives": ["honeywell-5811", "honeywell-prosixct"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "simplisafe-entry",
+        "device_b": "2gig-gc3e",
+        "verdict": "incompatible",
+        "condition": "SimpliSafe CLOSED ECOSYSTEM. Proprietary protocol — not standard 433MHz. Cannot pair with 2GIG panels.",
+        "limitations": [],
+        "alternatives": ["2gig-dw10", "2gig-dw10e"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "simplisafe-entry",
+        "device_b": "qolsys-iq4",
+        "verdict": "incompatible",
+        "condition": "SimpliSafe CLOSED ECOSYSTEM. Not compatible with Qolsys or any non-SimpliSafe panel.",
+        "limitations": [],
+        "alternatives": ["qolsys-qs1135-840"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "simplisafe-entry",
+        "device_b": "ring-alarm-gen2",
+        "verdict": "incompatible",
+        "condition": "SimpliSafe CLOSED ECOSYSTEM. Not compatible with Ring or any non-SimpliSafe panel.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "simplisafe-entry",
+        "device_b": "dsc-powerseries-neo",
+        "verdict": "incompatible",
+        "condition": "SimpliSafe CLOSED ECOSYSTEM. Despite both using 433MHz, SimpliSafe uses proprietary OOK protocol incompatible with DSC.",
+        "limitations": [],
+        "alternatives": ["dsc-pg9303", "resolution-re301"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5811",
+        "device_b": "simplisafe-base-gen3",
+        "verdict": "incompatible",
+        "condition": "SimpliSafe CLOSED ECOSYSTEM. No third-party sensors work with SimpliSafe base stations. Only SimpliSafe Gen 3 sensors are accepted.",
+        "limitations": [],
+        "alternatives": ["simplisafe-entry"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-prosixct",
+        "device_b": "adt-command",
+        "verdict": "compatible",
+        "condition": "ADT Command is based on Resideo ProSeries. PROSiX sensors (2.4GHz) are natively compatible.",
+        "limitations": ["ADT Command can only be monitored by ADT — cannot transfer to third-party monitoring"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5811",
+        "device_b": "adt-command",
+        "verdict": "incompatible",
+        "condition": "ADT Command only supports SiX/PROSiX sensors (2.4GHz). No 345MHz receiver. Honeywell 5800-series sensors are not compatible.",
+        "limitations": [],
+        "alternatives": ["honeywell-prosixct"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "2gig-dw10",
+        "device_b": "adt-command",
+        "verdict": "incompatible",
+        "condition": "ADT Command only supports SiX/PROSiX sensors (2.4GHz). No 345MHz receiver.",
+        "limitations": [],
+        "alternatives": ["honeywell-prosixct"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "adt-self-setup-entry",
+        "device_b": "honeywell-proseries-proa7plus",
+        "verdict": "incompatible",
+        "condition": "ADT Self Setup sensors are PROPRIETARY. Despite using 319.5MHz, they use a proprietary protocol that only works with the ADT Self Setup hub.",
+        "limitations": [],
+        "alternatives": ["honeywell-5811", "honeywell-prosixct"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "adt-self-setup-entry",
+        "device_b": "qolsys-iq4",
+        "verdict": "incompatible",
+        "condition": "ADT Self Setup sensors are PROPRIETARY. Not compatible with Qolsys or any non-ADT-Self-Setup panel.",
+        "limitations": [],
+        "alternatives": ["qolsys-qs1135-840"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "adt-self-setup-entry",
+        "device_b": "2gig-gc3e",
+        "verdict": "incompatible",
+        "condition": "ADT Self Setup sensors are PROPRIETARY. Not compatible with 2GIG or any non-ADT-Self-Setup panel.",
+        "limitations": [],
+        "alternatives": ["2gig-dw10"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "interlogix-tx-e201",
+        "device_b": "adt-self-setup",
+        "verdict": "incompatible",
+        "condition": "ADT Self Setup hub only accepts its own proprietary sensors. Standard 319.5MHz sensors are not compatible.",
+        "limitations": [],
+        "alternatives": ["adt-self-setup-entry"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "vivint-dw11",
+        "device_b": "2gig-gc3e",
+        "verdict": "compatible",
+        "condition": "Vivint 345MHz sensors are rebranded 2GIG hardware. CAN be factory-reset and re-learned into any 2GIG panel.",
+        "limitations": ["Must be factory-reset/excluded from Vivint hub first"],
+        "alternatives": [],
+        "source": "community_reported"
+    },
+    {
+        "device_a": "vivint-dw11",
+        "device_b": "honeywell-proseries-proa7plus",
+        "verdict": "compatible",
+        "condition": "Vivint 345MHz sensors work with any panel that accepts 345MHz. ProSeries PROA7PLUS has built-in 345MHz receiver.",
+        "limitations": ["Must be factory-reset from Vivint hub first"],
+        "alternatives": [],
+        "source": "community_reported"
+    },
+    {
+        "device_a": "vivint-dw11",
+        "device_b": "qolsys-iq4",
+        "verdict": "compatible",
+        "condition": "Vivint 345MHz sensors work with Qolsys IQ Panel 4 (built-in 345MHz support).",
+        "limitations": ["Must be factory-reset from Vivint hub first"],
+        "alternatives": [],
+        "source": "community_reported"
+    },
+    {
+        "device_a": "ring-contact-gen2",
+        "device_b": "2gig-gc3e",
+        "verdict": "incompatible",
+        "condition": "Ring sensors use proprietary Z-Wave pairing. Despite being Z-Wave devices, they ONLY pair with Ring Alarm base stations.",
+        "limitations": [],
+        "alternatives": ["2gig-dw10"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "ring-contact-gen2",
+        "device_b": "honeywell-proseries-proa7plus",
+        "verdict": "incompatible",
+        "condition": "Ring sensors ONLY pair with Ring Alarm base stations. Proprietary Z-Wave pairing — not compatible with other Z-Wave hubs.",
+        "limitations": [],
+        "alternatives": ["honeywell-prosixct", "honeywell-5811"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "ring-contact-gen2",
+        "device_b": "qolsys-iq4",
+        "verdict": "incompatible",
+        "condition": "Ring sensors CLOSED ECOSYSTEM. Proprietary Z-Wave pairing. Not compatible with Qolsys.",
+        "limitations": [],
+        "alternatives": ["qolsys-qs1135-840"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5811",
+        "device_b": "ring-alarm-gen2",
+        "verdict": "incompatible",
+        "condition": "Ring Alarm uses Z-Wave only. No 345MHz RF receiver. Honeywell 5800-series sensors not supported.",
+        "limitations": [],
+        "alternatives": ["ring-contact-gen2"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "firstalert-zcombo-g",
+        "device_b": "ring-alarm-gen2",
+        "verdict": "compatible",
+        "condition": "First Alert ZCOMBO-G is the ONLY third-party Z-Wave sensor whitelisted to trigger Ring Alarm when armed.",
+        "limitations": ["Only Z-Wave smoke/CO sensor that can trigger Ring Alarm — other third-party Z-Wave sensors cannot trigger alarm"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "ecobee-premium",
+        "device_b": "2gig-gc3e",
+        "verdict": "partial",
+        "condition": "Ecobee thermostats are WiFi-only (NO Z-Wave). Cannot pair directly with panel. Thermostat control available via Alarm.com cloud-to-cloud API integration only.",
+        "limitations": ["Cloud API integration only — not direct panel control", "Requires Alarm.com account with thermostat service plan", "No local control if internet is down"],
+        "alternatives": ["alarmcom-adc-t3000", "2gig-stz1"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "abode-mini-dw",
+        "device_b": "honeywell-proseries-proa7plus",
+        "verdict": "incompatible",
+        "condition": "Abode sensors use proprietary AbodeRF 433MHz protocol (Climax OEM). ONLY work with Abode hubs. Not compatible with any other panel.",
+        "limitations": [],
+        "alternatives": ["honeywell-5811", "honeywell-prosixct"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "abode-mini-dw",
+        "device_b": "dsc-powerseries-neo",
+        "verdict": "incompatible",
+        "condition": "Abode uses proprietary AbodeRF protocol at 433MHz — NOT standard DSC 433MHz. Incompatible despite same frequency.",
+        "limitations": [],
+        "alternatives": ["dsc-pg9303", "resolution-re301"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5811",
+        "device_b": "abode-iota",
+        "verdict": "incompatible",
+        "condition": "Abode only accepts AbodeRF 433MHz sensors. Standard 345MHz/319.5MHz sensors not supported. Z-Wave peripherals work but NOT as alarm sensors.",
+        "limitations": [],
+        "alternatives": ["abode-mini-dw"],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "honeywell-5811",
+        "device_b": "elk-m1-gold",
+        "verdict": "compatible",
+        "condition": "Elk M1 Gold supports Honeywell 5800 series (345MHz) via the ELK-M1XRF2H add-on receiver.",
+        "limitations": ["Requires ELK-M1XRF2H receiver module (sold separately)"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "interlogix-tx-e201",
+        "device_b": "elk-m1-gold",
+        "verdict": "compatible",
+        "condition": "Elk M1 Gold supports GE/Interlogix 319.5MHz sensors via the ELK-M1XRF319 add-on receiver.",
+        "limitations": ["Requires ELK-M1XRF319 receiver module (sold separately)"],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "elk-319dwm",
+        "device_b": "interlogix-simon-xt",
+        "verdict": "compatible",
+        "condition": "Elk 319 Series sensors use 319.5MHz and are cross-compatible with GE/Interlogix panels.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    },
+    {
+        "device_a": "elk-319dwm",
+        "device_b": "qolsys-iq2-plus",
+        "verdict": "compatible",
+        "condition": "Elk 319 Series sensors (319.5MHz) work with Qolsys IQ Panel 2+ natively.",
+        "limitations": [],
+        "alternatives": [],
+        "source": "confirmed"
+    }
+]

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bastion-compat-check
+    runtime: docker
+    plan: free
+    dockerfilePath: ./bastion-compat/Dockerfile
+    dockerContext: ./bastion-compat
+    envVars:
+      - key: BASTION_HOSTED
+        value: "true"

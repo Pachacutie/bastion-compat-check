@@ -1,0 +1,482 @@
+[
+    {
+        "id": "2gig-gc2e",
+        "manufacturer": "2GIG",
+        "model": "GC2e",
+        "frequencies": ["319.5MHz", "345MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "alarm_com",
+        "notes": "Enhanced version of GC2. Dual-frequency support.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-gc3",
+        "manufacturer": "2GIG",
+        "model": "GC3",
+        "frequencies": ["319.5MHz", "345MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "alarm_com",
+        "notes": "First 2GIG panel with Z-Wave support.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-gc3e",
+        "manufacturer": "2GIG",
+        "model": "GC3e",
+        "frequencies": ["319.5MHz", "345MHz"],
+        "protocols": ["proprietary_rf", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Current 2GIG flagship (pre-Edge). Z-Wave Plus for home automation.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-edge",
+        "manufacturer": "2GIG",
+        "model": "Edge",
+        "frequencies": ["319.5MHz", "345MHz"],
+        "protocols": ["proprietary_rf", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Latest generation 2GIG panel.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-gc-touch",
+        "manufacturer": "2GIG",
+        "model": "GC Touch",
+        "frequencies": ["345MHz"],
+        "protocols": ["proprietary_rf", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "2GIG touchscreen panel (2025+). 7-inch display, Bluetooth disarm, 128 zones, 64 users. Z-Wave 800 series. Successor to GC2e.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-iq2-plus",
+        "manufacturer": "Qolsys",
+        "model": "IQ Panel 2+",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Multi-frequency via swappable daughtercards. 345MHz requires daughtercard.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-iq4",
+        "manufacturer": "Qolsys",
+        "model": "IQ Panel 4",
+        "frequencies": ["319.5MHz", "345MHz", "433MHz"],
+        "protocols": ["proprietary_rf", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Current Qolsys flagship. Built-in multi-frequency support.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-lyric",
+        "manufacturer": "Honeywell",
+        "model": "Lyric (LCP500-L)",
+        "frequencies": ["345MHz", "2.4GHz"],
+        "protocols": ["proprietary_rf", "six_series", "zwave_plus"],
+        "platform": "honeywell_total_connect",
+        "notes": "Honeywell touchscreen panel. 345MHz + SiX (2.4GHz) + Z-Wave Plus. EOL Dec 2021, replaced by ProSeries.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-vista-20p",
+        "manufacturer": "Honeywell",
+        "model": "Vista 20P",
+        "frequencies": ["345MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "honeywell_total_connect",
+        "notes": "Legacy workhorse. No Z-Wave. Millions installed in the field.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-powerseries-neo",
+        "manufacturer": "DSC",
+        "model": "PowerSeries Neo",
+        "frequencies": ["433MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "alarm_com",
+        "notes": "DSC ecosystem. PowerG encrypted sensor support.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-alarm-gen2",
+        "manufacturer": "Ring",
+        "model": "Alarm Gen 2",
+        "frequencies": [],
+        "protocols": ["zwave"],
+        "platform": "ring_platform",
+        "notes": "Z-Wave only. No legacy RF support. Ring ecosystem exclusive.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-gc2",
+        "manufacturer": "2GIG",
+        "model": "GC2",
+        "frequencies": ["319.5MHz", "345MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "alarm_com",
+        "notes": "Legacy 2GIG panel. 319.5MHz native, 345MHz via translator. No Z-Wave. Millions installed.",
+        "discontinued": true
+    },
+    {
+        "id": "2gig-sp1",
+        "manufacturer": "2GIG",
+        "model": "SP1",
+        "frequencies": ["319.5MHz", "345MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "alarm_com",
+        "notes": "Secondary wireless keypad/panel for 2GIG systems.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-iq2",
+        "manufacturer": "Qolsys",
+        "model": "IQ Panel 2",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "alarm_com",
+        "notes": "Original IQ Panel 2. 319.5MHz native, daughtercard slot for 345MHz or PowerG. Z-Wave (not Plus).",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-vista-15p",
+        "manufacturer": "Honeywell",
+        "model": "Vista 15P",
+        "frequencies": ["345MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "honeywell_total_connect",
+        "notes": "Entry-level Honeywell wired/wireless panel. 6 hardwired zones, 16 wireless zones. No Z-Wave.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-vista-21ip",
+        "manufacturer": "Honeywell",
+        "model": "Vista 21iP",
+        "frequencies": ["345MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "honeywell_total_connect",
+        "notes": "Commercial-grade Honeywell panel with built-in IP communicator. 48 zones expandable to 86.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-proseries-proa7plus",
+        "manufacturer": "Honeywell",
+        "model": "ProSeries PROA7PLUS",
+        "frequencies": ["345MHz", "2.4GHz"],
+        "protocols": ["proprietary_rf", "six_series", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Honeywell flagship all-in-one panel. 7-inch touchscreen. Dual RF: 345MHz (5800) + 2.4GHz (SiX/PROSiX). Z-Wave Plus. Now sold as First Alert PROA7PLUS-FA.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-proseries-proa7",
+        "manufacturer": "Honeywell",
+        "model": "ProSeries PROA7",
+        "frequencies": ["345MHz", "2.4GHz"],
+        "protocols": ["proprietary_rf", "six_series", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Base ProSeries panel. 7-inch touchscreen. Dual RF: 345MHz (5800) + 2.4GHz (SiX/PROSiX). Z-Wave Plus. Lower tier than PROA7PLUS.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-impassa",
+        "manufacturer": "DSC",
+        "model": "Impassa (SCW9057)",
+        "frequencies": ["433MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "alarm_com",
+        "notes": "DSC self-contained wireless alarm system. 433MHz, 64 wireless zones. No Z-Wave.",
+        "discontinued": true
+    },
+    {
+        "id": "dsc-powerseries-pro-hs3032",
+        "manufacturer": "DSC",
+        "model": "PowerSeries Pro HS3032",
+        "frequencies": ["433MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "alarm_com",
+        "notes": "Commercial-grade DSC panel. 8 to 32 hardwired zones, 128 wireless zones. PowerG support via HSM2HOST9.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-simon-xti",
+        "manufacturer": "Interlogix",
+        "model": "Simon XTi",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "",
+        "notes": "GE/Interlogix touchscreen panel. 319.5MHz. Company discontinued, but panels still in field.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-simon-xti5",
+        "manufacturer": "Interlogix",
+        "model": "Simon XTi-5",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "",
+        "notes": "GE/Interlogix last-generation panel. 319.5MHz + Z-Wave. Company discontinued 2019.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-concord-4",
+        "manufacturer": "Interlogix",
+        "model": "Concord 4",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "",
+        "notes": "GE/Interlogix wired/wireless hybrid panel. 319.5MHz. Up to 96 zones. Discontinued.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-simon-xt",
+        "manufacturer": "Interlogix",
+        "model": "Simon XT",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "",
+        "notes": "GE/Interlogix all-in-one wireless panel. 40 wireless zones. Built-in keypad/siren. SAW + Crystal sensor support. No Z-Wave. Millions installed.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-concord-express",
+        "manufacturer": "Interlogix",
+        "model": "Concord Express",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "",
+        "notes": "Budget version of Concord 4. 16 wireless + 6 hardwired zones. 319.5MHz.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-nx-8v2",
+        "manufacturer": "Interlogix",
+        "model": "NetworX NX-8V2",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "",
+        "notes": "Enhanced commercial panel. 8 hardwired zones expandable to 48. 8 partitions, 99 users. Requires NX-448E/NX-548E receiver for wireless 319.5MHz sensors.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-nx-4",
+        "manufacturer": "Interlogix",
+        "model": "NetworX NX-4",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "",
+        "notes": "Entry-level hardwired panel. 4 zones expandable to 8. Requires NX-408E receiver for wireless 319.5MHz sensors.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-nx-8e",
+        "manufacturer": "Interlogix",
+        "model": "NetworX NX-8E",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "",
+        "notes": "Largest NetworX panel. 8 zones expandable to 192. 8 partitions. Commercial-grade. Requires receiver for wireless.",
+        "discontinued": true
+    },
+    {
+        "id": "vivint-smart-hub",
+        "manufacturer": "Vivint",
+        "model": "Smart Hub (VS-SH2000)",
+        "frequencies": ["345MHz"],
+        "protocols": ["proprietary_rf", "zwave_plus", "wifi"],
+        "platform": "vivint_platform",
+        "notes": "Current Vivint flagship. 7-inch touchscreen. 345MHz RF (rebranded 2GIG sensors), Z-Wave Plus, Wi-Fi, NFC. 100 zones. Vivint-only monitoring. Sensors ARE reusable on other 345MHz panels.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-skycontrol",
+        "manufacturer": "Vivint",
+        "model": "SkyControl (V-MP2-345)",
+        "frequencies": ["345MHz"],
+        "protocols": ["proprietary_rf", "zwave", "wifi"],
+        "platform": "vivint_platform",
+        "notes": "First proprietary Vivint panel. 345MHz + Z-Wave + Wi-Fi. 120dB siren. Replaced by Smart Hub.",
+        "discontinued": true
+    },
+    {
+        "id": "ring-alarm-gen1",
+        "manufacturer": "Ring",
+        "model": "Alarm Gen 1",
+        "frequencies": [],
+        "protocols": ["zwave"],
+        "platform": "ring_platform",
+        "notes": "Original Ring Alarm base station. Z-Wave 500 series. CLOSED ECOSYSTEM — Ring sensors only pair with Ring base stations.",
+        "discontinued": true
+    },
+    {
+        "id": "ring-alarm-pro",
+        "manufacturer": "Ring",
+        "model": "Alarm Pro",
+        "frequencies": [],
+        "protocols": ["zwave", "wifi"],
+        "platform": "ring_platform",
+        "notes": "Ring premium base station with built-in eero Wi-Fi 6 router. Z-Wave 700 series. Cellular backup for both alarm AND internet. CLOSED ECOSYSTEM for sensors.",
+        "discontinued": false
+    },
+    {
+        "id": "adt-command",
+        "manufacturer": "ADT",
+        "model": "Command Panel 7\" (ADT7AIO)",
+        "frequencies": ["2.4GHz"],
+        "protocols": ["six_series", "zwave_plus"],
+        "platform": "adt_control",
+        "notes": "ADT flagship panel based on Resideo ProSeries PROA7PLUS. Uses SiX/PROSiX sensors (2.4GHz). Alarm.com backend branded as 'ADT Control'. ADT-only monitoring. Built-in camera, Bluetooth disarm.",
+        "discontinued": false
+    },
+    {
+        "id": "adt-self-setup",
+        "manufacturer": "ADT",
+        "model": "Self Setup Hub (S40LR1)",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "adt_self_setup",
+        "notes": "ADT DIY hub (formerly Blue by ADT / LifeShield). CLOSED ECOSYSTEM — proprietary 319.5MHz sensors only. Z-Wave for automation. Google Nest integration via ADT+ app. Built-in keypad.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-iq-pro",
+        "manufacturer": "Qolsys",
+        "model": "IQ Pro",
+        "frequencies": ["915MHz", "319.5MHz", "345MHz", "433MHz"],
+        "protocols": ["powerg", "proprietary_rf", "zwave"],
+        "platform": "alarm_com",
+        "notes": "Hybrid panel. Primary: PowerG (915MHz FHSS, encrypted). Secondary card slot: ONE legacy frequency (319.5/345/433MHz). Z-Wave.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-simon-xt",
+        "manufacturer": "Frontpoint",
+        "model": "Simon XT",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf"],
+        "platform": "alarm_com",
+        "notes": "Frontpoint-branded GE/Interlogix Simon XT. 319.5MHz. No Z-Wave. Replaced by Frontpoint Hub.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-iq-touch",
+        "manufacturer": "Frontpoint",
+        "model": "IQ Touch Panel",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "alarm_com",
+        "notes": "Frontpoint-branded Qolsys IQ touch panel. 319.5MHz + Z-Wave. Replaced by Frontpoint Hub.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-hub",
+        "manufacturer": "Frontpoint",
+        "model": "Hub (1.0/2.0)",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Frontpoint current hub. 319.5MHz sensors + Z-Wave Plus. Alarm.com platform. No touchscreen.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-display-hub-plus",
+        "manufacturer": "Frontpoint",
+        "model": "Display Hub+",
+        "frequencies": ["319.5MHz"],
+        "protocols": ["proprietary_rf", "zwave_plus"],
+        "platform": "alarm_com",
+        "notes": "Frontpoint touchscreen panel. 319.5MHz sensors + Z-Wave Plus. Alarm.com platform. Built-in display.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-connect-plus",
+        "manufacturer": "Alula",
+        "model": "Connect+ (RE6100P)",
+        "frequencies": ["319.5MHz", "345MHz", "433MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "alarm_com",
+        "notes": "Alula all-in-one panel. 96 zones. Cryptix encrypted receiver. Multi-frequency via RE934ZT card. Bluetooth. Ethernet + optional LTE/WiFi.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-bat-connect",
+        "manufacturer": "Alula",
+        "model": "BAT-CONNECT",
+        "frequencies": [],
+        "protocols": [],
+        "platform": "alarm_com",
+        "notes": "Universal communicator. Tri-path: LTE-M + WiFi + Ethernet. Works with most panels. Auto panel detection. AT&T (-A) and Verizon (-V) variants.",
+        "discontinued": false
+    },
+    {
+        "id": "alula-connect-xt",
+        "manufacturer": "Alula",
+        "model": "CONNECT-XT",
+        "frequencies": [],
+        "protocols": [],
+        "platform": "alarm_com",
+        "notes": "Communicator card for Interlogix Simon XT/XTi/XTi-5. LTE-M. AT&T (-A) and Verizon (-V) variants. Z-Wave variant available (-Z).",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-base-gen3",
+        "manufacturer": "SimpliSafe",
+        "model": "Base Station Gen 3 (SSBS3)",
+        "frequencies": ["433MHz"],
+        "protocols": ["simplisafe_proprietary"],
+        "platform": "simplisafe_platform",
+        "notes": "SimpliSafe Gen 3 base station. CLOSED ECOSYSTEM — only SimpliSafe Gen 3 sensors work. Proprietary 433MHz RF (unencrypted OOK). Built-in 95dB siren. WiFi + cellular. No Z-Wave, no Zigbee, no third-party sensor support.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-iota",
+        "manufacturer": "Abode",
+        "model": "Iota",
+        "frequencies": ["433MHz"],
+        "protocols": ["abode_proprietary", "zwave_plus", "zigbee"],
+        "platform": "abode_platform",
+        "notes": "Abode all-in-one hub. AbodeRF 433MHz (proprietary, Climax OEM) + Z-Wave Plus + Zigbee + HomeKit. Built-in 1080p camera, 93dB siren. 4G LTE cellular. CLOSED for sensors (AbodeRF only), OPEN for Z-Wave/Zigbee peripherals.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-smart-hub",
+        "manufacturer": "Abode",
+        "model": "Smart Security Hub (Gen 2)",
+        "frequencies": ["433MHz"],
+        "protocols": ["abode_proprietary", "zwave_plus", "zigbee"],
+        "platform": "abode_platform",
+        "notes": "Abode Gen 2 gateway. AbodeRF 433MHz + Z-Wave Plus + Zigbee + HomeKit. Ethernet only (no WiFi). 6-hour battery backup.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-hub-gen2",
+        "manufacturer": "Cove",
+        "model": "Security Hub Gen 2 (RE6100)",
+        "frequencies": ["345MHz", "433MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "cove_platform",
+        "notes": "Cove Gen 2 hub. OEM: Resolution Products RE6100. 345MHz + 433MHz. 96 zones. Ethernet + Verizon LTE cellular. Z-Wave. Officially closed ecosystem — Cove-branded sensors only.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-m1-gold",
+        "manufacturer": "Elk Products",
+        "model": "M1 Gold",
+        "frequencies": ["319.5MHz", "345MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "",
+        "notes": "Elk flagship panel. Hardwired-first (16 zones, expandable to 208). NO built-in wireless — requires add-on receiver: M1XRF319 (319.5MHz GE) or M1XRF2H (345MHz Honeywell). Z-Wave output only via M1XSLZW. ElkLink monitoring platform.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-m1ez8",
+        "manufacturer": "Elk Products",
+        "model": "M1EZ8",
+        "frequencies": ["319.5MHz", "345MHz"],
+        "protocols": ["proprietary_rf", "zwave"],
+        "platform": "",
+        "notes": "Elk entry-level panel. 8 zones expandable to 208. Same wireless capabilities as M1 Gold via add-on receivers.",
+        "discontinued": false
+    }
+]

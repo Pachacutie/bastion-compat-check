@@ -1,0 +1,2122 @@
+[
+    {
+        "id": "honeywell-5811",
+        "manufacturer": "Honeywell",
+        "model": "5811",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Most common Honeywell door/window sensor.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800pir",
+        "manufacturer": "Honeywell",
+        "model": "5800PIR",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Standard Honeywell PIR motion detector.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5853",
+        "manufacturer": "Honeywell",
+        "model": "5853",
+        "sensor_type": "glass_break",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Honeywell wireless glass break detector.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5808w3",
+        "manufacturer": "Honeywell",
+        "model": "5808W3",
+        "sensor_type": "smoke_heat",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Honeywell wireless smoke/heat detector.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800co",
+        "manufacturer": "Honeywell",
+        "model": "5800CO",
+        "sensor_type": "co_detector",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Honeywell wireless CO detector. Replaced by 5800COV.",
+        "discontinued": true
+    },
+    {
+        "id": "2gig-dw10",
+        "manufacturer": "2GIG",
+        "model": "DW10",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Standard 2GIG door/window contact. Model 2GIG-DW10-345.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-pir1",
+        "manufacturer": "2GIG",
+        "model": "PIR1",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "2GIG passive infrared motion detector. Model 2GIG-PIR1-345.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-gb1",
+        "manufacturer": "2GIG",
+        "model": "GB1",
+        "sensor_type": "glass_break",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "2GIG glass break detector. Model 2GIG-GB1-345.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-smkt3",
+        "manufacturer": "2GIG",
+        "model": "SMKT3",
+        "sensor_type": "smoke_heat",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "2GIG wireless smoke/heat/freeze detector. Replaced by SMKT8.",
+        "discontinued": true
+    },
+    {
+        "id": "2gig-tilt1",
+        "manufacturer": "2GIG",
+        "model": "TILT1",
+        "sensor_type": "tilt",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "2GIG tilt sensor for garage doors. Model 2GIG-TILT1-345.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9303",
+        "manufacturer": "DSC",
+        "model": "PG9303",
+        "sensor_type": "door_window",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG door/window contact. 128-bit AES encryption. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9914p",
+        "manufacturer": "DSC",
+        "model": "PG9914P",
+        "sensor_type": "motion",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG PIR motion detector. 128-bit AES encryption. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9922",
+        "manufacturer": "DSC",
+        "model": "PG9922",
+        "sensor_type": "glass_break",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG glass break detector. 128-bit AES encryption. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9936",
+        "manufacturer": "DSC",
+        "model": "PG9936",
+        "sensor_type": "smoke_heat",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG smoke/heat detector. 128-bit AES encryption. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-qs1135-840",
+        "manufacturer": "Qolsys",
+        "model": "QS1135-840",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Qolsys S-Line door/window sensor.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-qs1431-840",
+        "manufacturer": "Qolsys",
+        "model": "QS1431-840",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Qolsys S-Line PIR motion detector.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-qs5110-840",
+        "manufacturer": "Qolsys",
+        "model": "QS5110-840",
+        "sensor_type": "glass_break",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Qolsys S-Line glass break detector.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re201",
+        "manufacturer": "Resolution Products",
+        "model": "RE201",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Resolution Products door/window contact. 345MHz. Compatible with Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "ecolink-pirzwave25",
+        "manufacturer": "Ecolink",
+        "model": "PIRZWAVE2.5",
+        "sensor_type": "motion",
+        "frequency": "908.42MHz",
+        "protocol": "zwave_plus",
+        "notes": "Z-Wave Plus PIR motion sensor. Works with any Z-Wave panel.",
+        "discontinued": false
+    },
+    {
+        "id": "firstalert-zcombo-g",
+        "manufacturer": "First Alert",
+        "model": "ZCOMBO-G",
+        "sensor_type": "smoke_co",
+        "frequency": "zwave",
+        "protocol": "zwave",
+        "notes": "Z-Wave smoke and CO combo detector.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5816",
+        "manufacturer": "Honeywell",
+        "model": "5816",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Door/window sensor with external contact input. Allows wired sensor conversion to wireless.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800mini",
+        "manufacturer": "Honeywell",
+        "model": "5800MINI",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Ultra-small door/window contact. Brown or white. Popular for aesthetic installs.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5802mn",
+        "manufacturer": "Honeywell",
+        "model": "5802MN",
+        "sensor_type": "panic",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Personal wireless panic button. Necklace pendant form factor.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-5821",
+        "manufacturer": "Honeywell",
+        "model": "5821",
+        "sensor_type": "flood",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless flood and temperature sensor.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5822t",
+        "manufacturer": "Honeywell",
+        "model": "5822T",
+        "sensor_type": "tilt",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless garage door tilt sensor.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5834-4",
+        "manufacturer": "Honeywell",
+        "model": "5834-4",
+        "sensor_type": "key_fob",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "4-button wireless key fob. Arm/disarm/panic.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800pir-res",
+        "manufacturer": "Honeywell",
+        "model": "5800PIR-RES",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Pet-immune wireless PIR motion detector. Up to 80lb pet immunity.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-sixct",
+        "manufacturer": "Honeywell",
+        "model": "SiX CT",
+        "sensor_type": "door_window",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "SiX series encrypted door/window contact. 128-bit AES. Replaced by PROSIXCT. Compatible with Lyric, ProSeries, ADT Command.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-sixpir",
+        "manufacturer": "Honeywell",
+        "model": "SiX PIR",
+        "sensor_type": "motion",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "SiX series encrypted PIR motion. 128-bit AES. 40ft x 56ft coverage. Replaced by PROSIXPIR.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-sixgb",
+        "manufacturer": "Honeywell",
+        "model": "SiX GB",
+        "sensor_type": "glass_break",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "SiX series encrypted glass break detector. 128-bit AES. 25ft range. Replaced by PROSIXGB.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-sixsmoke",
+        "manufacturer": "Honeywell",
+        "model": "SiX SMOKE",
+        "sensor_type": "smoke_heat",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "SiX series encrypted photoelectric smoke/heat detector. 128-bit AES. Replaced by PROSIXSMOKEV.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-sixfob",
+        "manufacturer": "Honeywell",
+        "model": "SiX FOB",
+        "sensor_type": "key_fob",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "SiX series encrypted 4-button key fob. Replaced by PROSIXFOB.",
+        "discontinued": true
+    },
+    {
+        "id": "2gig-dw20r",
+        "manufacturer": "2GIG",
+        "model": "DW20R",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Recessed door/window contact. Installs inside door frame for clean look.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-dw30",
+        "manufacturer": "2GIG",
+        "model": "DW30",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Outdoor door/window contact. Weather-resistant housing. 345MHz (not 319.5MHz).",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-co3",
+        "manufacturer": "2GIG",
+        "model": "CO3",
+        "sensor_type": "co_detector",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless carbon monoxide detector for 2GIG systems.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-ft1",
+        "manufacturer": "2GIG",
+        "model": "FT1",
+        "sensor_type": "flood",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless flood and temperature sensor.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-key2",
+        "manufacturer": "2GIG",
+        "model": "KEY2",
+        "sensor_type": "key_fob",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "4-button wireless key fob for 2GIG systems.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-pad1",
+        "manufacturer": "2GIG",
+        "model": "PAD1",
+        "sensor_type": "keypad",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless touchscreen keypad for 2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-panic1",
+        "manufacturer": "2GIG",
+        "model": "PANIC1",
+        "sensor_type": "panic",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless panic button for 2GIG systems.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-image1",
+        "manufacturer": "2GIG",
+        "model": "IMAGE1",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Image sensor with built-in camera. Captures images on motion. Requires Alarm.com.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9945",
+        "manufacturer": "DSC",
+        "model": "PG9945",
+        "sensor_type": "door_window",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG vanishing door/window contact. 128-bit AES encryption. 2km open-air range. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9862",
+        "manufacturer": "DSC",
+        "model": "PG9862",
+        "sensor_type": "motion",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG outdoor curtain motion detector. Dual-element PIR. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9984p",
+        "manufacturer": "DSC",
+        "model": "PG9984P",
+        "sensor_type": "motion",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG outdoor dual-technology motion detector (PIR + microwave). Pet immune. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9916",
+        "manufacturer": "DSC",
+        "model": "PG9916",
+        "sensor_type": "co_detector",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG wireless CO detector. Electrochemical sensing. 128-bit AES. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-dw10e",
+        "manufacturer": "2GIG",
+        "model": "DW10e",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted door/window contact. 345MHz with AES encryption.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-pir1e",
+        "manufacturer": "2GIG",
+        "model": "PIR1e",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted PIR motion. 30x50ft coverage. 85lb pet immunity.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-gb1e",
+        "manufacturer": "2GIG",
+        "model": "GB1e",
+        "sensor_type": "glass_break",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted glass break detector. Dual-stage thud+crash detection.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-smkt8e",
+        "manufacturer": "2GIG",
+        "model": "SMKT8e",
+        "sensor_type": "smoke_heat",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted smoke/heat/freeze. UL217 8th edition.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-co8e",
+        "manufacturer": "2GIG",
+        "model": "CO8e",
+        "sensor_type": "co_detector",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted CO detector. Electrochemical sensor.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-key2e",
+        "manufacturer": "2GIG",
+        "model": "KEY2e",
+        "sensor_type": "key_fob",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted 4-button keyfob remote.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-panic1e",
+        "manufacturer": "2GIG",
+        "model": "PANIC1e",
+        "sensor_type": "panic",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted panic button pendant.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-tilt1e",
+        "manufacturer": "2GIG",
+        "model": "TILT1e",
+        "sensor_type": "tilt",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted tilt sensor for garage doors.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-ft1e",
+        "manufacturer": "2GIG",
+        "model": "FT1e",
+        "sensor_type": "flood",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted flood and temperature sensor.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-take1e",
+        "manufacturer": "2GIG",
+        "model": "TAKE1e",
+        "sensor_type": "takeover",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted hardwire takeover module. 8 wired zones to wireless.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-ff1e",
+        "manufacturer": "2GIG",
+        "model": "FF1e",
+        "sensor_type": "firefighter",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted FireFighter smoke/CO audio listener-transmitter.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-dw20e",
+        "manufacturer": "2GIG",
+        "model": "DW20e",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted recessed door/window contact. 2.5-inch compact.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-dw30e",
+        "manufacturer": "2GIG",
+        "model": "DW30e",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "eSeries encrypted outdoor wireless contact. Weather-resistant. 2 zones.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-smkt8",
+        "manufacturer": "2GIG",
+        "model": "SMKT8",
+        "sensor_type": "smoke_heat",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Smoke/heat/freeze detector. UL217 8th edition. Replaces SMKT3.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-co8",
+        "manufacturer": "2GIG",
+        "model": "CO8",
+        "sensor_type": "co_detector",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "CO detector. Replaces CO3.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-dw40",
+        "manufacturer": "2GIG",
+        "model": "DW40",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Bypass door/window sensor with push-button local bypass.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-ff",
+        "manufacturer": "2GIG",
+        "model": "FF",
+        "sensor_type": "firefighter",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "FireFighter smoke/CO audio listener-transmitter. Listens for existing alarm sounds.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-image3",
+        "manufacturer": "2GIG",
+        "model": "IMAGE3",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Image sensor with PIR + camera. 4 images per event. Color day / IR night. 3+ yr battery. Requires Alarm.com.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-ft6",
+        "manufacturer": "2GIG",
+        "model": "FT6",
+        "sensor_type": "flood",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Water leak detector. Simpler than FT1.",
+        "discontinued": false
+    },
+    {
+        "id": "2gig-f1",
+        "manufacturer": "2GIG",
+        "model": "F1",
+        "sensor_type": "fall_detection",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Numera fall detection pendant. Accelerometer-based. IPx7 water-resistant.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re110p",
+        "manufacturer": "Resolution Products",
+        "model": "RE110P",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "PIR motion detector. Compatible with 319.5MHz panels (2GIG, Qolsys, Interlogix).",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re116",
+        "manufacturer": "Resolution Products",
+        "model": "RE116",
+        "sensor_type": "siren",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless siren. 85dBA. 319.5MHz. NOT a smoke detector (smoke is RE114).",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re101",
+        "manufacturer": "Resolution Products",
+        "model": "RE101",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Standard door/window contact. 319.5MHz. For GE/Interlogix/Qolsys panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re103p",
+        "manufacturer": "Resolution Products",
+        "model": "RE103P",
+        "sensor_type": "panic",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wearable panic pendant. 3 sensor IDs. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re106m",
+        "manufacturer": "Resolution Products",
+        "model": "RE106M",
+        "sensor_type": "tilt",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Garage door tilt sensor. 45-degree trigger. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re111p",
+        "manufacturer": "Resolution Products",
+        "model": "RE111P",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Pet-immune PIR motion. Replaces RE110P. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re114",
+        "manufacturer": "Resolution Products",
+        "model": "RE114",
+        "sensor_type": "smoke_heat",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Photoelectric smoke + 135F heat + rate-of-rise. UL217. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re115",
+        "manufacturer": "Resolution Products",
+        "model": "RE115",
+        "sensor_type": "co_detector",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Carbon monoxide detector. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re118",
+        "manufacturer": "Resolution Products",
+        "model": "RE118",
+        "sensor_type": "flood",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Trident sensor: flood + freeze (40F) + overheat (100F). IP67. 10-year battery. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re122",
+        "manufacturer": "Resolution Products",
+        "model": "RE122",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "NanoMax ultra-small door/window contact. Peel & stick. 6+ year battery. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re129",
+        "manufacturer": "Resolution Products",
+        "model": "RE129",
+        "sensor_type": "glass_break",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Glass break detector. Pattern recognition. Replaces RE109. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re203p",
+        "manufacturer": "Resolution Products",
+        "model": "RE203P",
+        "sensor_type": "panic",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wearable panic pendant. 345MHz. For Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re206m",
+        "manufacturer": "Resolution Products",
+        "model": "RE206M",
+        "sensor_type": "tilt",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Garage door tilt sensor. 345MHz. For Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re210p",
+        "manufacturer": "Resolution Products",
+        "model": "RE210P",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Pet-immune PIR motion. 345MHz. For Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re214",
+        "manufacturer": "Resolution Products",
+        "model": "RE214",
+        "sensor_type": "smoke_heat",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Photoelectric smoke + 135F heat. UL217. 345MHz. For Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re215",
+        "manufacturer": "Resolution Products",
+        "model": "RE215",
+        "sensor_type": "co_detector",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Carbon monoxide detector. 345MHz. For Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re218",
+        "manufacturer": "Resolution Products",
+        "model": "RE218",
+        "sensor_type": "flood",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Trident sensor: flood + freeze + overheat. IP67. 10-year battery. 345MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re222",
+        "manufacturer": "Resolution Products",
+        "model": "RE222",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "NanoMax ultra-small door/window contact. 345MHz. For Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re229",
+        "manufacturer": "Resolution Products",
+        "model": "RE229",
+        "sensor_type": "glass_break",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Glass break detector. 345MHz. For Honeywell/2GIG panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re301",
+        "manufacturer": "Resolution Products",
+        "model": "RE301",
+        "sensor_type": "door_window",
+        "frequency": "433MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Door/window contact. 433MHz. For DSC panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re310p",
+        "manufacturer": "Resolution Products",
+        "model": "RE310P",
+        "sensor_type": "motion",
+        "frequency": "433MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Pet-immune PIR motion. 433MHz. For DSC panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re314",
+        "manufacturer": "Resolution Products",
+        "model": "RE314",
+        "sensor_type": "smoke_heat",
+        "frequency": "433MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Photoelectric smoke + heat. UL217. 433MHz. For DSC panels.",
+        "discontinued": false
+    },
+    {
+        "id": "resolution-re322",
+        "manufacturer": "Resolution Products",
+        "model": "RE322",
+        "sensor_type": "door_window",
+        "frequency": "433MHz",
+        "protocol": "proprietary_rf",
+        "notes": "NanoMax ultra-small door/window contact. 433MHz. For DSC panels.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-qs1133-840",
+        "manufacturer": "Qolsys",
+        "model": "QS1133-840",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Qolsys S-Line encrypted door/window contact.",
+        "discontinued": false
+    },
+    {
+        "id": "qolsys-qs1137-840",
+        "manufacturer": "Qolsys",
+        "model": "QS1137-840",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Qolsys S-Line mini door/window sensor, extended range.",
+        "discontinued": false
+    },
+    {
+        "id": "ecolink-dwzwave25",
+        "manufacturer": "Ecolink",
+        "model": "DWZWAVE2.5-ECO",
+        "sensor_type": "door_window",
+        "frequency": "zwave",
+        "protocol": "zwave",
+        "notes": "Z-Wave door/window sensor. Compatible with any Z-Wave controller. Battery powered.",
+        "discontinued": false
+    },
+    {
+        "id": "dsc-pg9933",
+        "manufacturer": "DSC",
+        "model": "PG9933",
+        "sensor_type": "co_detector",
+        "frequency": "915MHz",
+        "protocol": "powerg",
+        "notes": "PowerG wireless CO detector. 128-bit AES encryption. 915MHz FHSS.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-dws-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "DWS Gen 1",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "First-gen Frontpoint door/window sensor. CR2032 battery.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-dws-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "DWS Gen 2",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Second-gen Frontpoint door/window sensor. CR2032 battery.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-dws-gen3",
+        "manufacturer": "Frontpoint",
+        "model": "DWS Gen 3",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Third-gen Frontpoint door/window sensor. 2x CR2032 batteries.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-dws-gen4",
+        "manufacturer": "Frontpoint",
+        "model": "DWS Gen 4",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current Frontpoint door/window sensor. CR1632 battery.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-lrdws-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "LRDWS Gen 1",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Long-range door/window sensor. 2x CR123A batteries. Extended range for large doors/gates.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-lrdws-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "LRDWS Gen 2",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current long-range door/window sensor. CR1632 battery. Extended range.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-rdws-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "RDWS Gen 1",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Recessed door/window sensor. CR2032 battery. Installs inside door frame.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-rdws-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "RDWS Gen 2",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Recessed door/window sensor Gen 2. CR2 battery. Installs inside door frame.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-motion-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "Motion Gen 1 (Interlogix)",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "First-gen Frontpoint motion sensor (GE/Interlogix OEM). 2x AA batteries.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-motion-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "Motion Gen 2 (IQ Motion)",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Second-gen Frontpoint motion sensor (Qolsys IQ Motion OEM). 2x AAA batteries.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-motion-gen3",
+        "manufacturer": "Frontpoint",
+        "model": "Motion Gen 3",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Third-gen Frontpoint motion sensor. CR123A battery.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-motion-gen3-0",
+        "manufacturer": "Frontpoint",
+        "model": "Motion Gen 3.0",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current Frontpoint motion sensor. CR123A battery.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-image-sensor",
+        "manufacturer": "Frontpoint",
+        "model": "IQ Image Sensor",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Image-capture motion sensor. 2x Lithium AA batteries. Orientation-based tamper detection. Requires Alarm.com.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-glassbreak-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "Glass Break Gen 1",
+        "sensor_type": "glass_break",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "First-gen Frontpoint glass break sensor. 2x CR123A batteries.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-glassbreak-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "Glass Break Gen 2",
+        "sensor_type": "glass_break",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Second-gen Frontpoint glass break sensor. 2x CR123A batteries.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-glassbreak-gen3",
+        "manufacturer": "Frontpoint",
+        "model": "Glass Break Gen 3",
+        "sensor_type": "glass_break",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current Frontpoint glass break sensor. CR123A battery.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-garage-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "Garage Door Gen 1",
+        "sensor_type": "tilt",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "First-gen Frontpoint garage door tilt sensor. CR2032 battery.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-garage-gen4",
+        "manufacturer": "Frontpoint",
+        "model": "Garage Door Gen 4",
+        "sensor_type": "tilt",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current Frontpoint garage door tilt sensor. CR123A battery.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-smoke-heat-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "Smoke & Heat Gen 1",
+        "sensor_type": "smoke_heat",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "First-gen Frontpoint smoke/heat sensor. CR123A battery.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-smoke-heat-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "Smoke & Heat Gen 2",
+        "sensor_type": "smoke_heat",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Second-gen Frontpoint smoke/heat sensor. Internal lifetime lithium battery (non-replaceable).",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-smoke-heat-gen3",
+        "manufacturer": "Frontpoint",
+        "model": "Smoke & Heat Gen 3",
+        "sensor_type": "smoke_heat",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current Frontpoint smoke/heat sensor. 2x CR123A batteries.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-co-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "CO Detector Gen 1",
+        "sensor_type": "co_detector",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "First-gen Frontpoint CO detector. Plug-in (no battery). Wall outlet powered.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-co-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "CO Detector Gen 2",
+        "sensor_type": "co_detector",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Second-gen Frontpoint CO detector. 3x AA batteries.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-co-gen3",
+        "manufacturer": "Frontpoint",
+        "model": "CO Detector Gen 3",
+        "sensor_type": "co_detector",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current Frontpoint CO detector. 2x AAA batteries.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-flood-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "Flood Sensor Gen 1",
+        "sensor_type": "flood",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "First-gen Frontpoint flood sensor. 2x AAA batteries.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-flood-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "Flood Sensor Gen 2",
+        "sensor_type": "flood",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current Frontpoint flood sensor. 2x CR2032 batteries. Magnetic tamper detection.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-freeze-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "Freeze Sensor Gen 1",
+        "sensor_type": "freeze",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Frontpoint freeze/temperature sensor. 1/2 Lithium battery.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-keyfob-gen4",
+        "manufacturer": "Frontpoint",
+        "model": "Keychain Remote FP100",
+        "sensor_type": "key_fob",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current Frontpoint 4-button keychain remote. CR2032 battery. Arm/disarm/panic.",
+        "discontinued": false
+    },
+    {
+        "id": "frontpoint-keyfob-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "Keychain Remote Gen 1 (60-659-95R)",
+        "sensor_type": "key_fob",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "First-gen Frontpoint keychain remote. 23A battery.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-panic-gen1",
+        "manufacturer": "Frontpoint",
+        "model": "Panic Pendant Gen 1 (60-578-10-95)",
+        "sensor_type": "panic",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Frontpoint panic pendant. Internal lifetime battery. Necklace form factor.",
+        "discontinued": true
+    },
+    {
+        "id": "frontpoint-panic-gen2",
+        "manufacturer": "Frontpoint",
+        "model": "Panic Pendant Gen 2 (RE103)",
+        "sensor_type": "panic",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Frontpoint panic pendant Gen 2 (Resolution Products RE103). Internal lifetime battery. Red alarm button.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-5820l",
+        "manufacturer": "Honeywell",
+        "model": "5820L",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Slim-line door/window contact. Very thin profile. 150ft range.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800micra",
+        "manufacturer": "Honeywell",
+        "model": "5800MICRA",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Recessed door/window contact. Concealed install in 3/4-inch hole. 10-year battery.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800rps",
+        "manufacturer": "Honeywell",
+        "model": "5800RPS",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Recessed plunger switch. Plunger activates on door open. Doors only.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5818mnl",
+        "manufacturer": "Honeywell",
+        "model": "5818MNL",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Recessed mini door/window contact. 200ft range. Concealed install.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5817xt",
+        "manufacturer": "Honeywell",
+        "model": "5817XT",
+        "sensor_type": "universal_transmitter",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "3-zone universal transmitter. Converts wired sensors to 345MHz wireless. 500ft range.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800ss1",
+        "manufacturer": "Honeywell",
+        "model": "5800SS1",
+        "sensor_type": "shock",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless shock sensor. Detects vibrations on windows/doors.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800pir-od2",
+        "manufacturer": "Honeywell",
+        "model": "5800PIR-OD2",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Outdoor PIR motion. Dual-element. IP54 weatherproof. 40ft range. Pet immune.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5898",
+        "manufacturer": "Honeywell",
+        "model": "5898",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Dual-Tec motion (PIR + K-band microwave). 50x60ft coverage. 100lb pet immunity. Reduces false alarms.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800cov",
+        "manufacturer": "Honeywell",
+        "model": "5800COV",
+        "sensor_type": "co_detector",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Current wireless CO detector. Electrochemical sensor. Replaces 5800CO.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5800combo",
+        "manufacturer": "Honeywell",
+        "model": "5800COMBO",
+        "sensor_type": "smoke_co",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Combo smoke/CO/heat/IR detector. 4 sensing elements. Photo-electric + electrochemical CO + IR flame + thermal.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5809ss",
+        "manufacturer": "Honeywell",
+        "model": "5809SS",
+        "sensor_type": "heat",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Heat-only detector. Fixed temp (135F) + rate-of-rise (15F/min). UL 521. Commercial/residential.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5870api",
+        "manufacturer": "Honeywell",
+        "model": "5870API",
+        "sensor_type": "tilt",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Asset protection/tilt sensor. MEMS accelerometer. Detects movement or 30-degree tilt. For paintings, safes.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-5804bd",
+        "manufacturer": "Honeywell",
+        "model": "5804BD",
+        "sensor_type": "key_fob",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Bi-directional 4-button keyfob. Sends AND receives signals. LED status feedback.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-sixminict",
+        "manufacturer": "Honeywell",
+        "model": "SiXMINICT",
+        "sensor_type": "door_window",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "SiX mini door/window contact. Replaced by PROSIXMINI3.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-sixcombo",
+        "manufacturer": "Honeywell",
+        "model": "SiXCOMBO",
+        "sensor_type": "smoke_co",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "SiX combo smoke/heat/CO detector. Replaced by PROSIXCMBOV.",
+        "discontinued": true
+    },
+    {
+        "id": "honeywell-prosixct",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXCT",
+        "sensor_type": "door_window",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX door/window contact. 128-bit AES. Current production. Replaces SiXCT.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixmini3",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXMINI3",
+        "sensor_type": "door_window",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX mini door/window contact Gen 3. 300ft range. Current production.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixpir",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXPIR",
+        "sensor_type": "motion",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX PIR motion detector. 128-bit AES. Replaces SiXPIR.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixgb",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXGB",
+        "sensor_type": "glass_break",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX glass break detector. 128-bit AES. Replaces SiXGB.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixsmokev",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXSMOKEV",
+        "sensor_type": "smoke_heat",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX smoke/heat detector. 128-bit AES. Replaces SiXSMOKE.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixcmbov",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXCMBOV",
+        "sensor_type": "smoke_co",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX combo smoke/heat/CO. 4 sensing elements. 5-year battery. 300ft range. Replaces SiXCOMBO.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixflood",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXFLOOD",
+        "sensor_type": "flood",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX wireless flood sensor with external probe.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixfob",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXFOB",
+        "sensor_type": "key_fob",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX 4-button wireless keyfob. 128-bit AES. Replaces SiXFOB.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixpanic",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXPANIC",
+        "sensor_type": "panic",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX personal panic transmitter.",
+        "discontinued": false
+    },
+    {
+        "id": "honeywell-prosixmed",
+        "manufacturer": "Honeywell",
+        "model": "PROSIXMED",
+        "sensor_type": "panic",
+        "frequency": "2.4GHz",
+        "protocol": "six_series",
+        "notes": "PROSiX water-resistant medical alert button. Belt clip + lanyard + wristband.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-tx-e201",
+        "manufacturer": "Interlogix",
+        "model": "TX-E201",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Surface mount door/window contact. Crystal-based. CR2032 battery. Still manufactured by Ecolink.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-tx-e221",
+        "manufacturer": "Interlogix",
+        "model": "TX-E221",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Recessed mount door/window contact. Crystal-based. Concealed install.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-tx-e231",
+        "manufacturer": "Interlogix",
+        "model": "TX-E231",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Surface mount with external contact input. Converts wired sensors to wireless. Crystal-based. Still manufactured by Ecolink.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-tx-e251",
+        "manufacturer": "Interlogix",
+        "model": "TX-E251",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Long-range door/window contact. CR2 lithium battery. Dual-zone (reed + external). 500ft open air range. Still manufactured by Ecolink.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-tx-e721",
+        "manufacturer": "Interlogix",
+        "model": "TX-E721",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Pet-immune PIR (40 lbs). Crystal-based. 35x40ft coverage. CR123A battery. Still manufactured by Ecolink.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-tx-e401",
+        "manufacturer": "Interlogix",
+        "model": "TX-E401",
+        "sensor_type": "tilt",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Garage door tilt sensor. 45-degree trigger. Slow loop response prevents wind false alarms. Still manufactured by Ecolink.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-tx-e611",
+        "manufacturer": "Interlogix",
+        "model": "TX-E611",
+        "sensor_type": "flood",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Flood + freeze sensor. Dual zones (flood + freeze). Gold-plated contacts. Detects 1/64-inch water. Freeze at 41F. CR123A, 10yr. Still manufactured by Ecolink.",
+        "discontinued": false
+    },
+    {
+        "id": "interlogix-tx-e101",
+        "manufacturer": "Interlogix",
+        "model": "TX-E101",
+        "sensor_type": "key_fob",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "4-button chrome keyfob. Crystal-based. Arm/disarm/panic.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-tx-e111",
+        "manufacturer": "Interlogix",
+        "model": "TX-E111",
+        "sensor_type": "key_fob",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "2-button keyfob. Simple arm/disarm. Crystal-based.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-tx-e131",
+        "manufacturer": "Interlogix",
+        "model": "TX-E131",
+        "sensor_type": "universal_transmitter",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Universal transmitter. Converts wired sensors to 319.5MHz wireless. Crystal-based.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-tx-6010",
+        "manufacturer": "Interlogix",
+        "model": "TX-6010-01-1",
+        "sensor_type": "smoke_heat",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless photoelectric smoke + heat. 85dB sounder. Built-in drift compensation. 3V lithium.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-tx-6310",
+        "manufacturer": "Interlogix",
+        "model": "TX-6310-01-1",
+        "sensor_type": "co_detector",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless CO alarm. For Simon/Concord panels.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-60-873",
+        "manufacturer": "Interlogix",
+        "model": "60-873-95 (NX-488)",
+        "sensor_type": "glass_break",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "ShatterPro Crystal glassbreak. 360-degree coverage up to 20ft. Pattern recognition reduces false alarms.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-60-362n",
+        "manufacturer": "Interlogix",
+        "model": "60-362N-10-319.5",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Crystal MaxLife door/window sensor. White. Legacy Crystal series. Brown variant: 60-362N-11.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-60-511",
+        "manufacturer": "Interlogix",
+        "model": "60-511-01-95",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Crystal PIR motion sensor. Standard non-pet-immune. Legacy Crystal series.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-600-1064",
+        "manufacturer": "Interlogix",
+        "model": "600-1064-95R",
+        "sensor_type": "key_fob",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "4-button micro keyfob. Compact design. Crystal-based.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-60-578",
+        "manufacturer": "Interlogix",
+        "model": "60-578-10-95",
+        "sensor_type": "panic",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Crystal water-resistant pendant panic. Wearable. Medical/police/auxiliary alarms.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-tx-4200",
+        "manufacturer": "Interlogix",
+        "model": "TX-4200-01-1",
+        "sensor_type": "panic",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Personal panic device. White and black variants.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-sdx-135z",
+        "manufacturer": "Interlogix",
+        "model": "SDX-135Z",
+        "sensor_type": "smoke_heat",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Wireless interconnected photoelectric smoke + heat + freeze. 10-year sealed battery. Up to 24 interconnected units.",
+        "discontinued": true
+    },
+    {
+        "id": "interlogix-60-886",
+        "manufacturer": "Interlogix",
+        "model": "60-886-95",
+        "sensor_type": "shock",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Learn Mode shock sensor. Detects forced entry vibrations. White (60-886-95), brown (60-886-11-95).",
+        "discontinued": true
+    },
+    {
+        "id": "simplisafe-entry",
+        "manufacturer": "SimpliSafe",
+        "model": "Entry Sensor (SSES3)",
+        "sensor_type": "door_window",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 door/window sensor. CLOSED ECOSYSTEM — only works with SimpliSafe Gen 3 base station.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-motion",
+        "manufacturer": "SimpliSafe",
+        "model": "Motion Sensor (SSMS3)",
+        "sensor_type": "motion",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 PIR motion sensor. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-glassbreak",
+        "manufacturer": "SimpliSafe",
+        "model": "Glass Break Sensor (SSGB3)",
+        "sensor_type": "glass_break",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 glass break sensor. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-smoke",
+        "manufacturer": "SimpliSafe",
+        "model": "Smoke Detector (SSSD3)",
+        "sensor_type": "smoke_heat",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 photoelectric smoke detector. UL 268. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-co",
+        "manufacturer": "SimpliSafe",
+        "model": "CO Detector (SSCO3)",
+        "sensor_type": "co_detector",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 carbon monoxide detector. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-water",
+        "manufacturer": "SimpliSafe",
+        "model": "Water Sensor (SSWT3)",
+        "sensor_type": "flood",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 water/flood sensor. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-freeze",
+        "manufacturer": "SimpliSafe",
+        "model": "Temperature Sensor (SSFS3)",
+        "sensor_type": "freeze",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 temperature/freeze sensor. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-panic",
+        "manufacturer": "SimpliSafe",
+        "model": "Panic Button (SSPB3)",
+        "sensor_type": "panic",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 panic button. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "simplisafe-keyfob",
+        "manufacturer": "SimpliSafe",
+        "model": "Key Fob (SSKF3)",
+        "sensor_type": "key_fob",
+        "frequency": "433MHz",
+        "protocol": "simplisafe_proprietary",
+        "notes": "SimpliSafe Gen 3 key fob with panic. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "adt-self-setup-entry",
+        "manufacturer": "ADT",
+        "model": "Self Setup Door/Window (SSH1R0-29)",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "ADT Self Setup proprietary door/window sensor. CLOSED ECOSYSTEM — only works with ADT Self Setup hub. Not compatible with other 319.5MHz panels.",
+        "discontinued": false
+    },
+    {
+        "id": "adt-self-setup-motion",
+        "manufacturer": "ADT",
+        "model": "Self Setup Motion (SSM1R0-29)",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "ADT Self Setup proprietary motion sensor. CLOSED ECOSYSTEM — only works with ADT Self Setup hub.",
+        "discontinued": false
+    },
+    {
+        "id": "adt-self-setup-flood",
+        "manufacturer": "ADT",
+        "model": "Self Setup Flood/Temp (SSW1R0-29)",
+        "sensor_type": "flood",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "ADT Self Setup proprietary flood/temperature sensor. CLOSED ECOSYSTEM — only works with ADT Self Setup hub.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-dw11",
+        "manufacturer": "Vivint",
+        "model": "Door/Window DW11 (V-DW11-345)",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Vivint-branded 345MHz door/window sensor. Rebranded 2GIG-type. CAN be re-learned into any 2GIG/Honeywell 345MHz panel.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-pir2",
+        "manufacturer": "Vivint",
+        "model": "Motion PIR2 (V-PIR2-345)",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Vivint-branded 345MHz PIR motion. CAN be re-learned into other 345MHz panels.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-gb2",
+        "manufacturer": "Vivint",
+        "model": "Glass Break GB2 (V-GB2-345)",
+        "sensor_type": "glass_break",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Vivint-branded 345MHz glass break. CAN be re-learned into other 345MHz panels.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-smoke",
+        "manufacturer": "Vivint",
+        "model": "Smoke Detector (VS-SMK001-345)",
+        "sensor_type": "smoke_heat",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Vivint 345MHz photoelectric smoke detector.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-smoke-co",
+        "manufacturer": "Vivint",
+        "model": "Smoke/CO Combo (VS-SMKC01-345)",
+        "sensor_type": "smoke_co",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Vivint 345MHz combined smoke (photoelectric) + CO (electrochemical) detector.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-flood",
+        "manufacturer": "Vivint",
+        "model": "Flood Sensor (VS-FLD001-345)",
+        "sensor_type": "flood",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Vivint 345MHz water/flood sensor.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-keyfob",
+        "manufacturer": "Vivint",
+        "model": "Key Fob (VS-SKEY2-345)",
+        "sensor_type": "key_fob",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Vivint 4-button key fob. Arm stay/away, disarm, panic. CR2032 battery.",
+        "discontinued": false
+    },
+    {
+        "id": "vivint-panic",
+        "manufacturer": "Vivint",
+        "model": "Panic Button (V-PANIC2-345)",
+        "sensor_type": "panic",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Vivint dedicated 345MHz panic button remote.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-contact-gen2",
+        "manufacturer": "Ring",
+        "model": "Contact Sensor Gen 2 (4SD1SZ)",
+        "sensor_type": "door_window",
+        "frequency": "908.42MHz",
+        "protocol": "zwave",
+        "notes": "Ring Gen 2 door/window contact. Z-Wave 700 series. CLOSED ECOSYSTEM — only pairs with Ring Alarm base stations.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-motion-gen2",
+        "manufacturer": "Ring",
+        "model": "Motion Detector Gen 2 (4SP1SZ)",
+        "sensor_type": "motion",
+        "frequency": "908.42MHz",
+        "protocol": "zwave",
+        "notes": "Ring Gen 2 PIR motion detector. Z-Wave 700. CLOSED ECOSYSTEM — Ring base only.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-glass-break",
+        "manufacturer": "Ring",
+        "model": "Glass Break Sensor",
+        "sensor_type": "glass_break",
+        "frequency": "908.42MHz",
+        "protocol": "zwave",
+        "notes": "Ring glass break detector. Gen 2 only. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-flood-freeze",
+        "manufacturer": "Ring",
+        "model": "Flood & Freeze Sensor",
+        "sensor_type": "flood",
+        "frequency": "908.42MHz",
+        "protocol": "zwave",
+        "notes": "Ring flood and freeze sensor. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-smoke-co-listener",
+        "manufacturer": "Ring",
+        "model": "Smoke & CO Listener",
+        "sensor_type": "smoke_co",
+        "frequency": "908.42MHz",
+        "protocol": "zwave",
+        "notes": "NOT a smoke detector. Listens for alarm sounds from existing detectors and forwards alert to Ring. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "ring-outdoor-contact",
+        "manufacturer": "Ring",
+        "model": "Outdoor Contact Sensor",
+        "sensor_type": "door_window",
+        "frequency": "908.42MHz",
+        "protocol": "zwave",
+        "notes": "Weather-resistant outdoor door/window contact. Gen 2 only. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-mini-dw",
+        "manufacturer": "Abode",
+        "model": "Mini Door/Window Sensor",
+        "sensor_type": "door_window",
+        "frequency": "433MHz",
+        "protocol": "abode_proprietary",
+        "notes": "AbodeRF 433MHz proprietary (Climax OEM). CR2032. CLOSED — only works with Abode hubs.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-motion",
+        "manufacturer": "Abode",
+        "model": "Motion Sensor (PIR)",
+        "sensor_type": "motion",
+        "frequency": "433MHz",
+        "protocol": "abode_proprietary",
+        "notes": "AbodeRF 433MHz. 110-degree FOV, 35ft range. 2x AA. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-glass-break",
+        "manufacturer": "Abode",
+        "model": "Acoustic Glass Break Sensor",
+        "sensor_type": "glass_break",
+        "frequency": "433MHz",
+        "protocol": "abode_proprietary",
+        "notes": "AbodeRF 433MHz. 25ft range, 360-degree. Dual-frequency discrimination. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-water",
+        "manufacturer": "Abode",
+        "model": "Water Leak Sensor",
+        "sensor_type": "flood",
+        "frequency": "433MHz",
+        "protocol": "abode_proprietary",
+        "notes": "AbodeRF 433MHz. 85dB built-in siren, 47-inch sensing cable. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "abode-keyfob",
+        "manufacturer": "Abode",
+        "model": "Key Fob",
+        "sensor_type": "key_fob",
+        "frequency": "433MHz",
+        "protocol": "abode_proprietary",
+        "notes": "AbodeRF 433MHz. Arm/disarm/panic. CLOSED ECOSYSTEM.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-dw-gen2",
+        "manufacturer": "Cove",
+        "model": "Door/Window Sensor (LP.DW02.345)",
+        "sensor_type": "door_window",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Cove Gen 2 door/window. OEM: Luna Products. 345MHz. May be compatible with 2GIG panels per Luna docs.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-motion-gen2",
+        "manufacturer": "Cove",
+        "model": "Motion Sensor (LP.PIR02.345)",
+        "sensor_type": "motion",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Cove Gen 2 PIR motion. OEM: Luna Products. 345MHz. 90-degree FOV, 45ft range, pet immune 55lbs.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-glass-break",
+        "manufacturer": "Cove",
+        "model": "Glass Break (LP.GB01.345)",
+        "sensor_type": "glass_break",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Cove Gen 2 glass break. OEM: Luna Products. 345MHz. 15ft detection range.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-flood-freeze",
+        "manufacturer": "Cove",
+        "model": "Flood/Freeze (LP.FF02.345)",
+        "sensor_type": "flood",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Cove Gen 2 flood/freeze sensor. OEM: Luna Products. 345MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-smoke",
+        "manufacturer": "Cove",
+        "model": "Smoke/Heat Detector (51000-357)",
+        "sensor_type": "smoke_heat",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Cove smoke/heat detector. OEM: Apollo America. 3x AAA.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-co",
+        "manufacturer": "Cove",
+        "model": "CO Detector (51000-307)",
+        "sensor_type": "co_detector",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Cove carbon monoxide detector. OEM: Apollo America. CR123A.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-keyfob",
+        "manufacturer": "Cove",
+        "model": "Key Fob (LP.KEY02.345)",
+        "sensor_type": "key_fob",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Cove Gen 2 key fob. OEM: Luna Products. 345MHz. 500ft range.",
+        "discontinued": false
+    },
+    {
+        "id": "cove-medical",
+        "manufacturer": "Cove",
+        "model": "Medical Pendant (LP.MED02.345)",
+        "sensor_type": "panic",
+        "frequency": "345MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Cove Gen 2 medical pendant. OEM: Luna Products. 345MHz. IPX7 waterproof.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-319dwm",
+        "manufacturer": "Elk Products",
+        "model": "ELK-319DWM",
+        "sensor_type": "door_window",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Elk 319 Series mini door/window contact. One-way supervised. Compatible with GE/Interlogix 319.5MHz panels via M1XRF319 receiver.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-319pirw",
+        "manufacturer": "Elk Products",
+        "model": "ELK-319PIRW",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Elk 319 Series wall-mount PIR motion. One-way supervised. 319.5MHz cross-compatible with GE/Interlogix panels.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-319pirc",
+        "manufacturer": "Elk Products",
+        "model": "ELK-319PIRC",
+        "sensor_type": "motion",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Elk 319 Series 360-degree ceiling-mount PIR. 14-40ft detection area. Selectable sensitivity.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-319gb",
+        "manufacturer": "Elk Products",
+        "model": "ELK-319GB",
+        "sensor_type": "glass_break",
+        "frequency": "319.5MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Elk 319 Series acoustic glass break. Selectable sensitivity. 319.5MHz.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-6020",
+        "manufacturer": "Elk Products",
+        "model": "ELK-6020",
+        "sensor_type": "door_window",
+        "frequency": "915MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Elk 6000 Series two-way door/window contact. 902-928MHz FHSS (50 channels). Requires M1XRFTW transceiver. Elk-only.",
+        "discontinued": false
+    },
+    {
+        "id": "elk-6040",
+        "manufacturer": "Elk Products",
+        "model": "ELK-6040",
+        "sensor_type": "glass_break",
+        "frequency": "915MHz",
+        "protocol": "proprietary_rf",
+        "notes": "Elk 6000 Series two-way glass break. 902-928MHz FHSS. Requires M1XRFTW transceiver. Elk-only.",
+        "discontinued": false
+    }
+]
