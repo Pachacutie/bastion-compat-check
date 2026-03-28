@@ -1,8 +1,42 @@
 # BASTION Device Compatibility Checker
 
-Check if your home security devices are compatible before you buy. Free, instant, no signup.
+Check if your home security devices are compatible before you buy. 403 devices across 45 manufacturers with 79 field-tested compatibility overrides. Frequency matching, protocol validation, and known edge cases — so you don't find out after the install.
 
-**Try it now:** [bastion-compat-check.onrender.com](https://bastion-compat-check.onrender.com)
+Built on a decade of home security industry experience.
+
+Part of the [BASTION](https://github.com/Pachacutie/BASTION) portfolio.
+
+---
+
+## Use It Online
+
+No install needed. Open in your browser, pick two devices, get your answer:
+
+**[bastion-compat-check.onrender.com](https://bastion-compat-check.onrender.com)**
+
+No data stored. No accounts. No tracking. Compatibility checks run in memory and return a result — nothing is logged.
+
+---
+
+## Run It Locally (Complete Privacy)
+
+For maximum privacy, install and run on your own computer. No network calls, no telemetry.
+
+### Install
+
+Requires Python 3.12+.
+
+```bash
+pip install bastion-compat-check
+```
+
+### Launch the Web Interface
+
+```bash
+flask --app src.bastion_compat.web:create_app run
+```
+
+Opens the same interface — running entirely on your machine.
 
 ---
 
@@ -17,7 +51,13 @@ Select two devices — a panel and a sensor (or peripheral) — and get an insta
 | **PARTIAL** | Devices can connect but with limitations (e.g., reduced feature set). |
 | **UNKNOWN** | Not enough data to determine compatibility. |
 
-The checker evaluates frequency match, protocol compatibility, known edge cases, and platform requirements (Alarm.com, Honeywell Total Connect, etc.).
+### Features
+
+- **Two-device compatibility check** — select any two devices and get an instant verdict with explanation
+- **Single-device mode** — select one device to see everything compatible with it
+- **Browsable device database** — filterable table of all 403 devices
+- **Dynamic alternatives** — incompatible verdicts suggest compatible alternatives
+- **Search-as-you-type** — find devices by manufacturer, model, or type
 
 ## Device Database
 
@@ -39,31 +79,17 @@ The rules engine evaluates devices in priority order:
 4. **Partial compatibility** — Z-Wave Plus device on a Z-Wave (non-Plus) controller
 5. **Platform dependency** — flags when a device requires a specific monitoring platform
 
-## Features
-
-- **Two-device compatibility check** — select any two devices and get an instant verdict with explanation
-- **Single-device mode** — select one device to see everything compatible with it
-- **Browsable device database** — filterable table of all 403 devices
-- **Dynamic alternatives** — incompatible verdicts suggest compatible alternatives
-- **Search-as-you-type** — find devices by manufacturer, model, or type
-
-## Privacy
-
-No data stored. No accounts. No tracking. Compatibility checks run in memory on the server and return a result — nothing is logged.
+No AI, no cloud, no network calls. Pure rule evaluation against a curated device database.
 
 ## Development
 
 ```bash
+git clone https://github.com/Pachacutie/bastion-compat-check.git
+cd bastion-compat-check
 python -m venv .venv
-.venv/Scripts/pip install -e ".[dev,web]"   # Windows
-.venv/bin/pip install -e ".[dev,web]"       # macOS/Linux
+source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+pip install -e ".[dev,web]"
 pytest -v
-```
-
-Run locally:
-
-```bash
-flask --app src.bastion_compat.web:create_app run --debug
 ```
 
 ## Contributing Device Data
@@ -80,7 +106,3 @@ Each entry follows a strict JSON schema. See existing entries for format.
 ## License
 
 MIT
-
----
-
-Part of **[BASTION](https://github.com/Pachacutie/BASTION)** — open-source home security tools by [Pachacutie](https://github.com/Pachacutie).
