@@ -34,6 +34,10 @@ def create_app() -> Flask:
     def index():
         return render_template("index.html", hosted=is_hosted)
 
+    @app.route("/about")
+    def about():
+        return render_template("about.html")
+
     @app.route("/api/devices")
     def api_devices():
         return jsonify(db.export_all())

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — BASTION Device Compatibility Checker</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+nav { max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #30363d; }
+nav a { color: #e6edf3; text-decoration: none; font-weight: 600; font-size: 1rem; }
+nav a:hover { color: #58a6ff; }
+nav .nav-links { display: flex; gap: 1.5rem; }
+nav .nav-links a { font-weight: 400; font-size: 0.9rem; color: #8b949e; }
+nav .nav-links a:hover { color: #58a6ff; }
+.container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+h2 { font-size: 1.2rem; color: #e6edf3; margin-bottom: 0.5rem; margin-top: 1.5rem; }
+h2:first-child { margin-top: 0; }
+p { color: #8b949e; margin-bottom: 1rem; font-size: 0.95rem; }
+ul { padding-left: 1.5rem; margin: 0.5rem 0 1rem; }
+li { color: #8b949e; margin-bottom: 0.3rem; font-size: 0.95rem; }
+a { color: #58a6ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back-link { text-align: center; margin-top: 2rem; font-size: 0.9rem; }
+footer { max-width: 900px; margin: 2rem auto 1.5rem; padding: 1rem 1.5rem 0; border-top: 1px solid #30363d; text-align: center; font-size: 0.8rem; color: #8b949e; }
+footer a { color: #58a6ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<nav>
+    <a href="/">BASTION Device Compatibility Checker</a>
+    <div class="nav-links">
+        <a href="/about">About</a>
+    </div>
+</nav>
+<div class="container">
+
+<h2>What This Tool Does</h2>
+<p>BASTION Device Compatibility Checker tells you whether your home security devices work together before you buy them. Select any two devices — sensor and panel, lock and hub, camera and NVR — and get an instant verdict.</p>
+
+<h2>How It Works</h2>
+<ul>
+    <li>A rules engine checks frequency match, protocol compatibility, known edge cases, and platform requirements</li>
+    <li>403 devices across 45 manufacturers with 79 hand-written compatibility overrides</li>
+    <li>Four verdicts: COMPATIBLE, INCOMPATIBLE, PARTIAL (works with limitations), UNKNOWN</li>
+    <li>Single-device mode: select one device to see everything compatible with it</li>
+    <li>Browsable, filterable database of all devices</li>
+</ul>
+
+<h2>Our Data</h2>
+<p>Device compatibility data is sourced from manufacturer documentation, FCC filings, user reports, and firsthand industry experience. The database covers major security panel manufacturers (Honeywell, DSC, Qolsys, 2GIG, IQ Panel) and the sensors, locks, and peripherals that work with them.</p>
+<p>Compatibility overrides capture real-world edge cases that frequency/protocol matching alone can't determine — firmware-specific issues, regional variants, and known integration quirks.</p>
+
+<h2>Limitations</h2>
+<ul>
+    <li>Compatibility data is based on documented specifications and known integrations. Untested combinations show as UNKNOWN, not INCOMPATIBLE.</li>
+    <li>Firmware updates can change compatibility. A device that was incompatible may work after an update (or vice versa).</li>
+    <li>Regional frequency regulations may affect compatibility in some markets.</li>
+    <li>This tool checks device-to-device compatibility, not whether a device works with a specific monitoring service.</li>
+</ul>
+
+<h2 id="your-data">About Your Data</h2>
+<p>This tool collects nothing. Zero.</p>
+<ul>
+    <li>No accounts. No sign-ups. No cookies.</li>
+    <li>No analytics. No tracking pixels. No third-party scripts.</li>
+    <li>Every compatibility check runs on the server and is forgotten immediately. No queries are logged.</li>
+    <li>For complete privacy, install locally — nothing leaves your machine.</li>
+</ul>
+<p>The home security industry profits from capturing your data. This tool proves you don't need to give it up to make an informed decision.</p>
+
+<h2>Report Missing Devices</h2>
+<p>Have a device we don't cover? Found a compatibility result that's wrong? <a href="https://github.com/Pachacutie/bastion-compat-check/issues/new?title=Device+request:+[manufacturer]+[model]" target="_blank" rel="noopener">Report it on GitHub</a>.</p>
+
+<div class="back-link"><a href="/">&larr; Back to Compatibility Checker</a></div>
+</div>
+<footer>
+    Part of <a href="https://github.com/Pachacutie/BASTION">BASTION</a> — open-source tools for smarter home security decisions.
+</footer>
+</body>
+</html>
