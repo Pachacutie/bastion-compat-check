@@ -2,9 +2,9 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY bastion-compat/pyproject.toml bastion-compat/README.md bastion-compat/wsgi.py ./
-COPY bastion-compat/src/ src/
-COPY bastion-compat/data/ data/
+COPY pyproject.toml README.md wsgi.py ./
+COPY src/ src/
+COPY data/ data/
 
 RUN pip install --no-cache-dir ".[web]" gunicorn
 
