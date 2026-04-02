@@ -14,39 +14,39 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #f5f5f5;
-    color: #333;
+    background: #0d1117;
+    color: #e6edf3;
     line-height: 1.6;
 }
 .container {
-    max-width: 720px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 32px 24px;
 }
 h1 {
     font-size: 1.75rem;
-    color: #2c3e50;
+    color: #e6edf3;
     margin-bottom: 4px;
 }
 .subtitle {
-    color: #666;
+    color: #8b949e;
     font-size: 1.05rem;
     margin-bottom: 24px;
 }
 .explainer {
-    background: #fff;
+    background: #161b22;
     border-radius: 8px;
     padding: 20px 24px;
     margin-bottom: 28px;
 }
 .explainer h2 {
     font-size: 1rem;
-    color: #2c3e50;
+    color: #e6edf3;
     margin-bottom: 8px;
 }
 .explainer p {
     font-size: 0.93rem;
-    color: #555;
+    color: #8b949e;
     margin-bottom: 8px;
 }
 .explainer ul {
@@ -55,12 +55,12 @@ h1 {
 }
 .explainer ul li {
     font-size: 0.93rem;
-    color: #555;
+    color: #8b949e;
     padding: 3px 0;
 }
 .explainer ul li::before {
     content: "\2022";
-    color: #2c3e50;
+    color: #58a6ff;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -81,43 +81,45 @@ h1 {
     display: block;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #8b949e;
     margin-bottom: 6px;
 }
 .device-field input {
     width: 100%;
     padding: 10px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #30363d;
     border-radius: 8px;
     font-size: 0.95rem;
     outline: none;
     transition: border-color 0.2s;
+    background: #161b22;
+    color: #e6edf3;
 }
-.device-field input:focus { border-color: #2c3e50; }
+.device-field input:focus { border-color: #58a6ff; }
 .dropdown {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #161b22;
+    border: 1px solid #30363d;
     border-radius: 0 0 8px 8px;
     max-height: 220px;
     overflow-y: auto;
     z-index: 10;
     display: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 .dropdown .dd-item {
     padding: 8px 12px;
     cursor: pointer;
     font-size: 0.9rem;
 }
-.dropdown .dd-item:hover { background: #f0f4ff; }
+.dropdown .dd-item:hover { background: rgba(88,166,255,0.1); }
 .selected-chip {
     display: none;
     margin-top: 8px;
-    background: #eef2f7;
+    background: #161b22;
     border-radius: 6px;
     padding: 10px 12px;
     font-size: 0.85rem;
@@ -125,10 +127,10 @@ h1 {
 }
 .selected-chip .chip-name {
     font-weight: 600;
-    color: #2c3e50;
+    color: #e6edf3;
 }
 .selected-chip .chip-detail {
-    color: #666;
+    color: #8b949e;
     font-size: 0.82rem;
 }
 .selected-chip .chip-remove {
@@ -136,16 +138,16 @@ h1 {
     top: 8px;
     right: 10px;
     cursor: pointer;
-    color: #999;
+    color: #8b949e;
     font-size: 1.1rem;
     line-height: 1;
 }
-.selected-chip .chip-remove:hover { color: #dc3545; }
+.selected-chip .chip-remove:hover { color: #f85149; }
 
 /* Check button */
 .check-row { text-align: center; margin-bottom: 28px; }
 #checkBtn {
-    background: #2c3e50;
+    background: #58a6ff;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -161,7 +163,7 @@ h1 {
 /* Result panel */
 #resultPanel {
     display: none;
-    background: #fff;
+    background: #161b22;
     border-radius: 8px;
     padding: 20px 24px;
     margin-bottom: 28px;
@@ -178,8 +180,8 @@ h1 {
     margin-bottom: 12px;
 }
 .verdict-badge.compatible { background: #28a745; }
-.verdict-badge.incompatible { background: #dc3545; }
-.verdict-badge.partial { background: #ffc107; color: #333; }
+.verdict-badge.incompatible { background: #f85149; }
+.verdict-badge.partial { background: #d29922; color: #fff; }
 .verdict-badge.unknown { background: #6c757d; }
 .result-devices {
     display: grid;
@@ -191,23 +193,23 @@ h1 {
     .result-devices { grid-template-columns: 1fr; }
 }
 .result-device {
-    background: #f8f9fa;
+    background: rgba(255,255,255,0.03);
     border-radius: 6px;
     padding: 10px 14px;
     font-size: 0.88rem;
 }
-.result-device .rd-name { font-weight: 600; color: #2c3e50; }
-.result-device .rd-type { color: #888; font-size: 0.82rem; }
+.result-device .rd-name { font-weight: 600; color: #e6edf3; }
+.result-device .rd-type { color: #8b949e; font-size: 0.82rem; }
 .result-explanation {
     font-size: 0.93rem;
-    color: #444;
+    color: #8b949e;
     margin-bottom: 12px;
     line-height: 1.5;
 }
 .result-list h4 {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #e6edf3;
     margin-bottom: 4px;
 }
 .result-list ul {
@@ -217,19 +219,19 @@ h1 {
 }
 .result-list li {
     font-size: 0.88rem;
-    color: #555;
+    color: #8b949e;
     padding: 2px 0;
 }
 
 /* Error */
 .error-box {
-    background: #fff3f3;
-    border: 1px solid #dc3545;
+    background: rgba(248,81,73,0.1);
+    border: 1px solid #f85149;
     border-radius: 8px;
     padding: 14px 18px;
     margin-bottom: 20px;
     font-size: 0.93rem;
-    color: #dc3545;
+    color: #f85149;
     display: none;
 }
 
@@ -237,7 +239,7 @@ h1 {
 .browser-section { margin-bottom: 28px; }
 .browser-section h2 {
     font-size: 1.1rem;
-    color: #2c3e50;
+    color: #e6edf3;
     margin-bottom: 12px;
 }
 .filter-row {
@@ -248,21 +250,22 @@ h1 {
 }
 .filter-btn {
     padding: 6px 14px;
-    border: 1px solid #ccc;
-    background: #fff;
+    border: 1px solid #30363d;
+    background: #161b22;
+    color: #8b949e;
     border-radius: 6px;
     font-size: 0.85rem;
     cursor: pointer;
     transition: all 0.2s;
 }
 .filter-btn.active {
-    background: #2c3e50;
+    background: #58a6ff;
     color: #fff;
-    border-color: #2c3e50;
+    border-color: #58a6ff;
 }
-.filter-btn:hover:not(.active) { border-color: #2c3e50; }
+.filter-btn:hover:not(.active) { border-color: #58a6ff; }
 .device-table-wrap {
-    background: #fff;
+    background: #161b22;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -274,33 +277,33 @@ h1 {
 .device-table th {
     text-align: left;
     padding: 10px 12px;
-    background: #f8f9fa;
+    background: rgba(255,255,255,0.03);
     font-weight: 600;
-    color: #2c3e50;
-    border-bottom: 2px solid #eee;
+    color: #8b949e;
+    border-bottom: 2px solid #30363d;
     font-size: 0.82rem;
     text-transform: uppercase;
     letter-spacing: 0.3px;
 }
 .device-table td {
     padding: 9px 12px;
-    border-bottom: 1px solid #f0f0f0;
-    color: #444;
+    border-bottom: 1px solid #30363d;
+    color: #e6edf3;
 }
 .device-table tr.clickable { cursor: pointer; }
-.device-table tr.clickable:hover td { background: #f7f9fc; }
+.device-table tr.clickable:hover td { background: rgba(88,166,255,0.05); }
 
 /* Single-device compat list */
 #singleDevicePanel {
     display: none;
-    background: #fff;
+    background: #161b22;
     border-radius: 8px;
     padding: 20px 24px;
     margin-bottom: 28px;
 }
 #singleDevicePanel h3 {
     font-size: 1rem;
-    color: #2c3e50;
+    color: #e6edf3;
     margin-bottom: 12px;
 }
 .compat-list-item {
@@ -308,7 +311,7 @@ h1 {
     align-items: center;
     gap: 10px;
     padding: 8px 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #30363d;
     font-size: 0.9rem;
 }
 .compat-list-item:last-child { border-bottom: none; }
@@ -322,32 +325,20 @@ h1 {
     flex-shrink: 0;
 }
 .mini-badge.compatible { background: #28a745; }
-.mini-badge.partial { background: #ffc107; color: #333; }
-.mini-badge.incompatible { background: #dc3545; }
+.mini-badge.partial { background: #d29922; color: #fff; }
+.mini-badge.incompatible { background: #f85149; }
 .mini-badge.unknown { background: #6c757d; }
 #singleBackBtn {
     margin-top: 12px;
     padding: 6px 16px;
-    border: 1px solid #ccc;
-    background: #fff;
+    border: 1px solid #30363d;
+    background: #161b22;
+    color: #8b949e;
     border-radius: 6px;
     font-size: 0.85rem;
     cursor: pointer;
 }
-#singleBackBtn:hover { border-color: #2c3e50; }
-
-/* Footer */
-.footer-note {
-    background: #f0f4ff;
-    border: 1px solid #cce0ff;
-    border-radius: 8px;
-    padding: 14px 18px;
-    font-size: 0.85rem;
-    color: #555;
-    text-align: center;
-    line-height: 1.5;
-}
-.footer-note a { color: #2c3e50; }
+#singleBackBtn:hover { border-color: #58a6ff; }
 
 /* Loading spinner */
 .spinner {
@@ -365,11 +356,17 @@ h1 {
 </style>
 </head>
 <body>
+<nav style="max-width:900px;margin:0 auto;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #30363d">
+    <a href="/" style="color:#e6edf3;text-decoration:none;font-weight:600;font-size:1rem">BASTION Device Compatibility Checker</a>
+    <div style="display:flex;gap:1.5rem">
+        <a href="#about" style="color:#8b949e;text-decoration:none;font-size:0.9rem">About</a>
+    </div>
+</nav>
 <div class="container">
     <h1>BASTION Device Compatibility Checker</h1>
     <p class="subtitle">Check if your home security devices work together.</p>
 
-    <div class="explainer">
+    <div class="explainer" id="about">
         <h2>What is this?</h2>
         <p>A free tool that checks whether your home security devices are compatible before you buy.</p>
         <ul>
@@ -434,17 +431,10 @@ h1 {
         </div>
     </div>
 
-    {% if hosted %}
-    <div class="footer-note">
-        No data is stored. No accounts. No tracking. For questions:
-        <a href="https://github.com/Pachacutie/bastion-compat" target="_blank" rel="noopener">github.com/Pachacutie/bastion-compat</a>
-    </div>
-    {% else %}
-    <div class="footer-note">
-        Running locally &mdash; nothing leaves your computer.
-    </div>
-    {% endif %}
 </div>
+<footer style="max-width:900px;margin:2rem auto 1.5rem;padding:1rem 1.5rem 0;border-top:1px solid #30363d;text-align:center;font-size:0.8rem;color:#8b949e">
+    Part of <a href="https://github.com/Pachacutie/BASTION" style="color:#58a6ff;text-decoration:none">BASTION</a> — open-source tools for smarter home security decisions.
+</footer>
 
 <script>
 (function() {
@@ -505,7 +495,7 @@ h1 {
             nameSpan.textContent = matches[i].display_name;
             var typeSpan = document.createElement("span");
             typeSpan.textContent = " (" + matches[i].device_type + ")";
-            typeSpan.style.color = "#999";
+            typeSpan.style.color = "#8b949e";
             typeSpan.style.fontSize = "0.82rem";
             item.appendChild(nameSpan);
             item.appendChild(typeSpan);
@@ -771,7 +761,7 @@ h1 {
 
         var loading = document.createElement("p");
         loading.textContent = "Loading...";
-        loading.style.color = "#999";
+        loading.style.color = "#8b949e";
         singleDevicePanel.appendChild(loading);
 
         fetch("/api/compatible/" + encodeURIComponent(deviceId))
@@ -784,7 +774,7 @@ h1 {
                 if (list.length === 0) {
                     var none = document.createElement("p");
                     none.textContent = "No compatible devices found in the database.";
-                    none.style.color = "#999";
+                    none.style.color = "#8b949e";
                     singleDevicePanel.appendChild(none);
                 } else {
                     for (var i = 0; i < list.length; i++) {
@@ -816,7 +806,7 @@ h1 {
             })
             .catch(function() {
                 loading.textContent = "Could not load compatibility data.";
-                loading.style.color = "#dc3545";
+                loading.style.color = "#f85149";
             });
     }
 })();
